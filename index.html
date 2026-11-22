@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Greece 2040</title>
+<meta name="description" content="Greece 2040 follows Greece's transformation with data: debt, growth, investment, markets, jobs, talent, tech and energy. Independent and non-profit.">
+<meta property="og:title" content="Greece 2040">
+<meta property="og:description" content="Greece's transformation, in numbers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://greece2040.com/">
+<meta name="theme-color" content="#0C1722">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230D5EAF'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='900' font-size='30' text-anchor='middle' fill='%23fff'%3EGR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+</head>
+<body>
+<style>
+/* Layout: full-bleed video statement, then the page cools down into data —
+   each band gives a little more detail than the last (statement → rehook → then/now → charts → long reads → daily feed → sign-up). */
+:root {
+  --bg: #F4F6F8;          /* marble, cool */
+  --surface: #FFFFFF;
+  --ink: #0C1722;         /* night Aegean */
+  --ink-2: #3E4C59;
+  --muted: #6B7885;
+  --rule: #D9DFE5;
+  --accent: #0D5EAF;      /* the flag's blue */
+  --accent-ink: #FFFFFF;
+  --series-2: #9AA6B2;    /* euro area, neutral */
+  --draft: #B4540A;
+  --hero-ink: #FFFFFF;
+  --f-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --wrap: 1200px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0A121A; --surface: #111C26; --ink: #EEF2F5; --ink-2: #B9C3CC; --muted: #8592A0;
+  --rule: #22303C; --accent: #5B9BFF; --accent-ink: #06101A; --series-2: #5D6B78; --draft: #F0A15C; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0A121A; --surface: #111C26; --ink: #EEF2F5; --ink-2: #B9C3CC; --muted: #8592A0;
+  --rule: #22303C; --accent: #5B9BFF; --accent-ink: #06101A; --series-2: #5D6B78; --draft: #F0A15C; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.55; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.draft { display: inline-block; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--draft); border: 1px solid currentColor; border-radius: 3px; padding: 1px 5px; vertical-align: middle; }
+h2 { font-family: var(--f-display); font-stretch: 112%; font-weight: 800; font-size: clamp(30px, 4.4vw, 52px); line-height: 1.02; letter-spacing: -.01em; text-wrap: balance; margin: 10px 0 0; }
+.lede { color: var(--ink-2); max-width: 62ch; font-size: 19px; margin: 18px 0 0; }
+section { padding-block: clamp(64px, 9vw, 120px); }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; min-height: min(92vh, 860px); display: flex; flex-direction: column; color: var(--hero-ink); background: #05090D; overflow: hidden; padding: 0; }
+.hero video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4,8,12,.78) 0%, rgba(4,8,12,.45) 48%, rgba(4,8,12,.05) 80%), linear-gradient(0deg, rgba(4,8,12,.55), rgba(4,8,12,0) 40%); }
+.topbar { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: max(18px, env(safe-area-inset-top, 0px)) 0; }
+.mark { font-family: var(--f-display); font-weight: 900; font-stretch: 125%; font-size: 18px; letter-spacing: .02em; text-decoration: none; display: flex; align-items: baseline; gap: 8px; }
+.mark b { font-weight: 900; padding: 1px 6px; background: #FFFFFF; color: #05090D; border-radius: 2px; }
+.nav { display: flex; gap: 22px; font-size: 14px; font-weight: 500; }
+.nav a { text-decoration: none; opacity: .85; }
+.nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
+.hero-body { position: relative; z-index: 2; margin-top: auto; padding-bottom: clamp(48px, 9vh, 96px); }
+.statements { position: relative; display: grid; }
+.statement { grid-area: 1 / 1; font-family: var(--f-display); font-weight: 900; font-stretch: 118%; text-transform: uppercase; font-size: clamp(42px, 7.6vw, 108px); line-height: .92; letter-spacing: -.015em; max-width: 13ch; text-wrap: balance; margin: 0; transition: opacity .6s ease, transform .6s ease; }
+.statement[aria-hidden="true"] { opacity: 0; transform: translateY(14px); }
+.hero-sub { margin: 26px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; font-size: 16px; }
+.hero-sub .year { font-family: var(--f-mono); font-size: 13px; letter-spacing: .14em; }
+.progress { display: flex; gap: 6px; }
+.progress i { width: 28px; height: 3px; background: rgba(255,255,255,.3); border-radius: 2px; overflow: hidden; position: relative; }
+.progress i.on::after { content: ""; position: absolute; inset: 0; background: #fff; transform-origin: left; animation: fill var(--slide, 6.7s) linear forwards; }
+@keyframes fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.scroll-cue { color: #fff; font-size: 14px; text-decoration: none; display: inline-flex; gap: 8px; align-items: center; opacity: .9; }
+.scroll-cue::after { content: "↓"; font-size: 18px; }
+
+/* ---------- Rehook ---------- */
+.rehook { background: var(--ink); color: var(--bg); padding-block: clamp(56px, 8vw, 96px); }
+.rehook .eyebrow { color: var(--series-2); }
+.rehook p.big { font-family: var(--f-display); font-stretch: 100%; font-weight: 600; font-size: clamp(24px, 3.2vw, 38px); line-height: 1.18; max-width: 30ch; margin: 14px 0 0; text-wrap: balance; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: color-mix(in srgb, var(--bg) 18%, transparent); margin-top: 48px; border-radius: 4px; overflow: hidden; }
+.stat { background: var(--ink); padding: 22px 20px 20px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.stat .n { font-family: var(--f-display); font-weight: 800; font-stretch: 110%; font-size: clamp(34px, 4.2vw, 56px); line-height: 1; font-variant-numeric: tabular-nums; }
+.stat .l { color: var(--series-2); font-size: 15px; }
+.stat .src { font-family: var(--f-mono); font-size: 11px; color: var(--series-2); margin-top: auto; padding-top: 8px; }
+
+/* ---------- Then / now / 2040 ---------- */
+.era-switch { display: inline-flex; margin-top: 28px; border: 1px solid var(--rule); border-radius: 999px; padding: 4px; background: var(--surface); gap: 2px; }
+.era-switch button { font: 500 15px var(--f-mono); color: var(--ink-2); background: none; border: 0; padding: 9px 18px; border-radius: 999px; cursor: pointer; }
+.era-switch button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.era-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin-top: 28px; border-top: 1px solid var(--rule); }
+.era-cell { padding: 22px 20px 6px 0; border-right: 1px solid var(--rule); min-width: 0; }
+.era-cell + .era-cell { padding-left: 20px; }
+.era-cell:last-child { border-right: 0; }
+.era-cell .k { font-size: 14px; color: var(--muted); }
+.era-cell .v { font-family: var(--f-display); font-weight: 800; font-stretch: 108%; font-size: clamp(26px, 3vw, 40px); line-height: 1.05; margin-top: 8px; font-variant-numeric: tabular-nums; transition: opacity .25s; }
+.era-cell .note { font-size: 14px; color: var(--ink-2); margin-top: 8px; }
+.era-caption { margin-top: 26px; color: var(--ink-2); max-width: 62ch; }
+
+/* ---------- Charts ---------- */
+.charts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 40px; }
+.chart { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 22px 22px 16px; min-width: 0; position: relative; }
+.chart h3 { font-family: var(--f-body); font-weight: 600; font-size: 18px; margin: 0; line-height: 1.3; }
+.chart .sub { color: var(--muted); font-size: 14px; margin: 4px 0 12px; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart .foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); margin-top: 10px; }
+.legend { display: flex; gap: 16px; font-size: 13px; color: var(--ink-2); margin-bottom: 6px; flex-wrap: wrap; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.axis text { fill: var(--muted); font: 11px var(--f-mono); }
+.grid line { stroke: var(--rule); stroke-width: 1; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font: 12.5px var(--f-mono); padding: 6px 9px; border-radius: 4px; white-space: nowrap; transform: translate(-50%, -120%); }
+
+/* ---------- Long reads carousel ---------- */
+.rail-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.rail-btns { display: flex; gap: 8px; }
+.rail-btns button { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); font-size: 18px; cursor: pointer; }
+.rail { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(280px, 360px); gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; margin-top: 32px; padding-bottom: 14px; scrollbar-width: thin; }
+.read { scroll-snap-align: start; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 22px; display: flex; flex-direction: column; gap: 12px; min-height: 300px; text-decoration: none; min-width: 0; }
+.read:hover { border-color: var(--accent); }
+.read .tag { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.read h3 { font-family: var(--f-display); font-stretch: 104%; font-weight: 800; font-size: 25px; line-height: 1.08; margin: 0; text-wrap: balance; }
+.read p { color: var(--ink-2); font-size: 15.5px; margin: 0; }
+.read .meta { margin-top: auto; font-family: var(--f-mono); font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; gap: 10px; }
+.read .big { font-family: var(--f-display); font-weight: 900; font-stretch: 112%; font-size: 44px; line-height: 1; color: var(--ink); }
+
+/* ---------- Feed ---------- */
+.feed-wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+.chips button { font: 500 14px var(--f-body); color: var(--ink-2); background: var(--surface); border: 1px solid var(--rule); padding: 7px 14px; border-radius: 999px; cursor: pointer; }
+.chips button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.feed { list-style: none; padding: 0; margin: 22px 0 0; border-top: 1px solid var(--rule); }
+.feed li { display: grid; grid-template-columns: 92px minmax(0, 1fr) auto; gap: 18px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.feed time { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); }
+.feed a { font-weight: 600; font-size: 17.5px; text-decoration: none; line-height: 1.35; }
+.feed a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.feed .why { display: block; color: var(--ink-2); font-size: 15px; margin-top: 4px; font-weight: 400; }
+.feed .cat { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+.feed .src { font-family: var(--f-mono); font-size: 12px; color: var(--muted); display: block; margin-top: 6px; }
+
+/* ---------- Sign-up ---------- */
+.signup { background: var(--accent); color: var(--accent-ink); }
+.signup h2 { max-width: 18ch; }
+.signup p { max-width: 52ch; margin: 16px 0 0; opacity: .9; }
+.signup form { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; max-width: 560px; }
+.signup input { flex: 1 1 240px; min-width: 0; font: 16px var(--f-body); padding: 14px 16px; border-radius: 4px; border: 0; background: var(--surface); color: var(--ink); }
+.signup button { font: 600 16px var(--f-body); padding: 14px 22px; border-radius: 4px; border: 0; background: var(--ink); color: var(--bg); cursor: pointer; }
+.signup .ok { margin-top: 14px; font-weight: 600; }
+
+footer { padding-block: 40px 56px; color: var(--muted); font-size: 14px; }
+footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; border-top: 1px solid var(--rule); padding-top: 24px; }
+
+@media (max-width: 860px) {
+  .nav { display: none; }
+  .stats { grid-template-columns: minmax(0, 1fr); }
+  .era-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .era-cell { padding: 18px 14px 14px 0 !important; border-right: 0; border-bottom: 1px solid var(--rule); }
+  .era-cell:nth-child(odd) { border-right: 1px solid var(--rule); }
+  .era-cell:nth-child(even) { padding-left: 14px !important; }
+  .charts { grid-template-columns: minmax(0, 1fr); }
+  .feed li { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .hero::after { background: linear-gradient(0deg, rgba(4,8,12,.85) 0%, rgba(4,8,12,.35) 60%, rgba(4,8,12,.2) 100%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .statement { transition: none; }
+  .progress i.on::after { animation: none; transform: none; }
+}
+</style>
+
+<style>
+/* v3 additions: dashboard of charts and stat boxes, filtered by bucket */
+.dash { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+.dash .chart { margin: 0; }
+.dash .chart.wide { grid-column: span 2; }
+.dash .chart[hidden] { display: none; }
+.chart .cat { font-family: var(--f-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; display: block; }
+.kpi { display: flex; flex-direction: column; }
+.kpi .kpi-n { font-family: var(--f-display); font-weight: 900; font-stretch: 110%; font-size: clamp(44px, 5vw, 64px); line-height: 1; margin: 14px 0 10px; font-variant-numeric: tabular-nums; }
+.kpi p { color: var(--ink-2); font-size: 15.5px; margin: 0; }
+.kpi .foot { margin-top: auto; padding-top: 14px; }
+.read .num { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.more { margin-top: 18px; font: 600 15px var(--f-body); background: none; border: 1px solid var(--rule); color: var(--ink); border-radius: 999px; padding: 9px 18px; cursor: pointer; }
+.empty { padding: 22px 0; color: var(--muted); border-bottom: 1px solid var(--rule); }
+@media (max-width: 1000px) { .dash { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 680px) { .dash { grid-template-columns: minmax(0, 1fr); } .dash .chart.wide { grid-column: auto; } }
+</style>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <video id="heroVideo" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+  <div class="wrap topbar">
+    <a class="mark" href="#top" aria-label="Greece 2040 home">GREECE <b>2040</b></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#numbers">The transformation</a>
+      <a href="#picture">The whole picture</a>
+      <a href="#reads">Long reads</a>
+      <a href="#feed">Daily feed</a>
+      <a href="#signup">Newsletter</a>
+    </nav>
+  </div>
+  <div class="wrap hero-body">
+    <div class="statements" id="statements" aria-live="polite">
+      <h1 class="statement">Greece is rising.</h1>
+      <p class="statement" aria-hidden="true">Athens. The next global capital.</p>
+      <p class="statement" aria-hidden="true">This is Greece's decade.</p>
+    </div>
+    <div class="hero-sub">
+      <span class="year">GREECE · 2026 → 2040</span>
+      <span class="progress" id="progress" aria-hidden="true"><i class="on"></i><i></i><i></i></span>
+      <a class="scroll-cue" href="#rehook">See the numbers</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ REHOOK ============ -->
+<section class="rehook" id="rehook">
+  <div class="wrap">
+    <div class="eyebrow">The evidence</div>
+    <p class="big">Investment grade five years after the last bailout ended.</p>
+    <div class="stats">
+      <div class="stat"><span class="n">−64 pts</span><span class="l">fall in public debt as a share of GDP since 2020</span><span class="src">Eurostat, Oct 2026</span></div>
+      <div class="stat"><span class="n">€12.6bn</span><span class="l">foreign direct investment in 2025, a record</span><span class="src">Eurostat, Bank of Greece</span></div>
+      <div class="stat"><span class="n">Developed</span><span class="l">market status since September 2026</span><span class="src">FTSE Russell, S&amp;P DJI, STOXX</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE TRANSFORMATION ============ -->
+<section id="numbers">
+  <div class="wrap">
+    <div class="eyebrow">The transformation</div>
+    <h2>Pick a year and watch the country change.</h2>
+    <div class="era-switch" role="group" aria-label="Choose a year">
+      <button type="button" data-era="2015" aria-pressed="false">2015</button>
+      <button type="button" data-era="2020" aria-pressed="false">2020</button>
+      <button type="button" data-era="2026" aria-pressed="true">2026</button>
+    </div>
+    <div class="era-grid" id="eraGrid">
+      <div class="era-cell"><div class="k">Credit rating</div><div class="v" data-k="rating"></div><div class="note" data-n="rating"></div></div>
+      <div class="era-cell"><div class="k">Public debt, % of GDP</div><div class="v" data-k="debt"></div><div class="note" data-n="debt"></div></div>
+      <div class="era-cell"><div class="k">Unemployment</div><div class="v" data-k="jobs"></div><div class="note" data-n="jobs"></div></div>
+      <div class="era-cell"><div class="k">Stock market status</div><div class="v" data-k="market"></div><div class="note" data-n="market"></div></div>
+    </div>
+    <p class="era-caption" id="eraCaption"></p>
+    <p class="era-caption" style="font-size:14px;color:var(--muted)">Sources: Eurostat (debt, unemployment), rating agencies via Reuters and Bloomberg, FTSE Russell, S&amp;P DJI, STOXX and MSCI. 2026 shows the latest figures: debt for 2025, unemployment for September 2026.</p>
+  </div>
+</section>
+
+<!-- ============ THE WHOLE PICTURE ============ -->
+<section id="picture" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">The whole picture</div>
+    <h2>A country rebuilding, sector by sector.</h2>
+    <div class="chips" id="dashChips" role="group" aria-label="Filter the charts"></div>
+    <div class="dash" id="dash">
+
+      <figure class="chart" data-cat="Economy" id="debtChart">
+        <span class="cat">Economy</span>
+        <h3>Debt down 64 points of GDP in five years</h3>
+        <p class="sub">Public debt, % of GDP · dashed: IMF projection</p>
+        <svg viewBox="0 0 560 300" role="img" aria-label="Line chart of Greek public debt, 2015 to 2025, with the IMF projection to 2030"></svg>
+        <div class="foot"><span>Eurostat (Oct 2026); IMF WEO (Oct 2026)</span></div>
+      </figure>
+
+      <figure class="chart" data-cat="Economy" id="growthChart">
+        <span class="cat">Economy</span>
+        <h3>Growing faster than the euro area</h3>
+        <p class="sub">Real GDP growth, % per year</p>
+        <div class="legend"><span><i style="background:var(--accent)"></i>Greece</span><span><i style="background:var(--series-2)"></i>Euro area</span></div>
+        <svg viewBox="0 0 560 280" role="img" aria-label="Bar chart of real GDP growth, Greece against the euro area, 2021 to 2025"></svg>
+        <div class="foot"><span>Eurostat (Nov 2026); 2024–25 provisional</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Economy">
+        <span class="cat">Economy</span>
+        <h3>From deficit to surplus</h3>
+        <div class="kpi-n">+2.0%</div>
+        <p>of GDP budget surplus in 2025, against a deficit of 9.9% in 2020.</p>
+        <div class="foot"><span>Eurostat, EDP notification Oct 2026</span></div>
+      </figure>
+
+      <figure class="chart wide" data-cat="Investment" id="fdiChart">
+        <span class="cat">Investment</span>
+        <h3>Foreign investment at a record</h3>
+        <p class="sub">Net foreign direct investment into Greece, € billion</p>
+        <svg viewBox="0 0 760 280" role="img" aria-label="Bar chart of net foreign direct investment into Greece, 2015 to 2025"></svg>
+        <div class="foot"><span>Eurostat bop_fdi6_flow / Bank of Greece (Oct 2026)</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Investment">
+        <span class="cat">Investment</span>
+        <h3>€8.3bn already this year</h3>
+        <div class="kpi-n">€8.3bn</div>
+        <p>net foreign direct investment in January to September 2026 (provisional).</p>
+        <div class="foot"><span>Bank of Greece, 20 Nov 2026</span></div>
+      </figure>
+
+      <figure class="chart wide" data-cat="Jobs" id="jobsChart">
+        <span class="cat">Jobs</span>
+        <h3>Unemployment down by two thirds</h3>
+        <p class="sub">Unemployment rate, annual average, %</p>
+        <div class="legend"><span><i style="background:var(--accent)"></i>Greece</span><span><i style="background:var(--series-2)"></i>Euro area</span></div>
+        <svg viewBox="0 0 760 280" role="img" aria-label="Line chart of the unemployment rate, Greece and the euro area, 2013 to 2025"></svg>
+        <div class="foot"><span>Eurostat une_rt_a (Nov 2026)</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Jobs">
+        <span class="cat">Jobs</span>
+        <h3>Lowest since 2008</h3>
+        <div class="kpi-n">7.4%</div>
+        <p>unemployment in August 2026, the lowest monthly rate since May 2008.</p>
+        <div class="foot"><span>Eurostat une_rt_m, seasonally adjusted</span></div>
+      </figure>
+
+      <figure class="chart" data-cat="Tourism" id="tourismChart">
+        <span class="cat">Tourism</span>
+        <h3>Tourism earns more every year</h3>
+        <p class="sub">Travel receipts, € billion (2020–22 not shown)</p>
+        <svg viewBox="0 0 560 280" role="img" aria-label="Bar chart of travel receipts: 2019, 2023, 2024 and 2025"></svg>
+        <div class="foot"><span>Bank of Greece; 2025 provisional</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Infrastructure">
+        <span class="cat">Infrastructure</span>
+        <h3>A motorway finished</h3>
+        <div class="kpi-n">182 km</div>
+        <p>E65 Central Greece motorway, fully open since July 2026.</p>
+        <div class="foot"><span>To Vima, Protothema, Jul 2026</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Infrastructure">
+        <span class="cat">Infrastructure</span>
+        <h3>Thessaloniki goes underground</h3>
+        <div class="kpi-n">18</div>
+        <p>stations on the Thessaloniki Metro, opened in 2024 and extended to Kalamaria in August 2026.</p>
+        <div class="foot"><span>Greek Reporter; operator announcements</span></div>
+      </figure>
+
+      <figure class="chart wide" data-cat="Markets" id="athexChart">
+        <span class="cat">Markets</span>
+        <h3>Athens shares up almost six times from the 2016 low</h3>
+        <p class="sub">Athens General Index, year-end close · 2026: close on 20 Nov</p>
+        <svg viewBox="0 0 760 280" role="img" aria-label="Line chart of the Athens General Index, 2011 to 2026, from a closing low of 440.88 in February 2016 to 2,552.70 in November 2026"></svg>
+        <div class="foot"><span>Euronext Athens; daily closes via Yahoo Finance. Price index, excluding dividends; still below the 2007 peak of 5,334.</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Markets">
+        <span class="cat">Markets</span>
+        <h3>Borrowing almost like Germany</h3>
+        <div class="kpi-n">0.78 pts</div>
+        <p>extra yield on Greek 10-year bonds over Germany's in 2025, against 21 points in 2012. Greece has borrowed more cheaply than Italy since April 2023.</p>
+        <div class="foot"><span>Eurostat irt_lt_mcby (ECB convergence yields)</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Markets">
+        <span class="cat">Markets</span>
+        <h3>Banks cleaned up</h3>
+        <div class="kpi-n">3.4%</div>
+        <p>of bank loans were non-performing in June 2026, down from 46% in 2017.</p>
+        <div class="foot"><span>IMF/World Bank FSI; Bank of Greece FSR, Oct 2026</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Energy">
+        <span class="cat">Energy</span>
+        <h3>Out of lignite</h3>
+        <div class="kpi-n">4.7%</div>
+        <p>of Greek electricity came from lignite in 2025, down from 54% in 2010. The largest lignite plant closed in May 2026.</p>
+        <div class="foot"><span>Ember; PPC announcements</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Jobs">
+        <span class="cat">Jobs</span>
+        <h3>The highest employment rate on record</h3>
+        <div class="kpi-n">71.0%</div>
+        <p>of 20–64 year-olds were in work in 2025, up from 52.5% in 2013.</p>
+        <div class="foot"><span>Eurostat lfsi_emp_a</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Markets">
+        <span class="cat">Markets</span>
+        <h3>Five years up in a row</h3>
+        <div class="kpi-n">+44%</div>
+        <p>for the Athens Stock Exchange in 2025, its fifth positive year in a row.</p>
+        <div class="foot"><span>Euronext Athens, Dec 2025</span></div>
+      </figure>
+
+      <figure class="chart wide" data-cat="Talent" id="talentChart">
+        <span class="cat">Talent</span>
+        <h3>More Greeks now arrive than leave</h3>
+        <p class="sub">Greek citizens leaving Greece and settling in Greece, per year</p>
+        <div class="legend"><span><i style="background:var(--accent)"></i>Arriving</span><span><i style="background:var(--series-2)"></i>Leaving</span></div>
+        <svg viewBox="0 0 760 280" role="img" aria-label="Line chart of Greek citizens leaving and arriving each year, 2010 to 2024; arrivals overtook departures in 2023"></svg>
+        <div class="foot"><span>Eurostat migr_emi1ctz, migr_imm1ctz (ELSTAT). Arrivals include Greeks born abroad.</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Talent">
+        <span class="cat">Talent</span>
+        <h3>The balance has turned</h3>
+        <div class="kpi-n">+19,852</div>
+        <p>more Greek citizens arrived than left in 2024, the second positive year in a row and the first since 2009.</p>
+        <div class="foot"><span>Eurostat, 2024</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Jobs">
+        <span class="cat">Jobs</span>
+        <h3>Young people back at work</h3>
+        <div class="kpi-n">19.1%</div>
+        <p>youth unemployment (15–24) in 2025, down from 59.2% in 2013.</p>
+        <div class="foot"><span>Eurostat une_rt_a</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Jobs">
+        <span class="cat">Jobs</span>
+        <h3>Minimum wage up since the crisis</h3>
+        <div class="kpi-n">€920</div>
+        <p>a month from April 2026, up from €586 after the 2012 cut (gross, paid 14 times a year).</p>
+        <div class="foot"><span>Eurostat earn_mw_cur; government decisions</span></div>
+      </figure>
+
+      <figure class="chart wide" data-cat="Tech" id="techChart">
+        <span class="cat">Tech</span>
+        <h3>Startup funding six times its 2019 level</h3>
+        <p class="sub">Money raised by Greek startups, € million</p>
+        <svg viewBox="0 0 760 280" role="img" aria-label="Bar chart of money raised by Greek startups, 2019 to 2025"></svg>
+        <div class="foot"><span>Found.ation; figures are reported minimums. Debt financing included from 2021.</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Health">
+        <span class="cat">Health</span>
+        <h3>Living longer than the EU</h3>
+        <div class="kpi-n">81.9</div>
+        <p>years of life expectancy at birth in 2024, a record for Greece and above the EU's 81.5.</p>
+        <div class="foot"><span>Eurostat demo_mlexpec</span></div>
+      </figure>
+
+      <figure class="chart kpi" data-cat="Health">
+        <span class="cat">Health</span>
+        <h3>Fewer avoidable deaths</h3>
+        <div class="kpi-n">221</div>
+        <p>avoidable deaths per 100,000 people in 2023, below the EU's 238.</p>
+        <div class="foot"><span>Eurostat hlth_cd_apr</span></div>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ LONG READS ============ -->
+<section id="reads" style="padding-top:0">
+  <div class="wrap">
+    <div class="rail-head">
+      <div>
+        <div class="eyebrow">Long reads</div>
+        <h2>The story behind the numbers.</h2>
+      </div>
+      <div class="rail-btns"><button type="button" id="railPrev" aria-label="Previous long reads">←</button><button type="button" id="railNext" aria-label="Next long reads">→</button></div>
+    </div>
+    <div class="rail" id="rail" tabindex="0" aria-label="Long reads"></div>
+  </div>
+</section>
+
+<!-- ============ DAILY FEED ============ -->
+<section id="feed" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Daily feed</div>
+    <h2>What's moving Greece.</h2>
+    <div class="chips" id="chips" role="group" aria-label="Filter the feed"></div>
+    <ul class="feed" id="feedList"></ul>
+    <button type="button" class="more" id="feedMore" hidden>Show more</button>
+  </div>
+</section>
+
+<!-- ============ SIGN-UP ============ -->
+<section class="signup" id="signup">
+  <div class="wrap">
+    <h2>Greece, in numbers, every week.</h2>
+    <p>The week's biggest moves, one chart that explains them, and the long reads as they come out. Free.</p>
+    <p class="ok">The newsletter is launching soon.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap row">
+    <span class="mark" style="color:var(--ink)">GREECE <b style="background:var(--ink);color:var(--bg)">2040</b></span>
+    <span>An independent, non-profit platform about Greece's future.</span>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
+
+  /* Hero video: the phone cut on narrow screens. */
+  const v = document.getElementById('heroVideo');
+  v.src = matchMedia('(max-width: 760px)').matches ? 'hero-mobile.mp4' : 'hero.mp4';
+  if (reduce) { v.removeAttribute('autoplay'); v.pause(); }
+
+  /* Statements on a 20-second loop. */
+  const lines = [...document.querySelectorAll('.statement')];
+  const bars = [...document.querySelectorAll('#progress i')];
+  let cur = 0;
+  const show = (i) => {
+    lines.forEach((el, k) => el.setAttribute('aria-hidden', k === i ? 'false' : 'true'));
+    bars.forEach((b, k) => { b.classList.remove('on'); if (k === i) { void b.offsetWidth; b.classList.add('on'); } });
+  };
+  if (!reduce) setInterval(() => { cur = (cur + 1) % lines.length; show(cur); }, 6700);
+
+  /* The transformation (Eurostat, agencies, index providers; 22 Nov 2026). */
+  const eras = {
+    2015: { rating: ['Junk', 'Below investment grade'], debt: ['179.6%', 'Third bailout signed'], jobs: ['25.0%', 'One in four out of work'], market: ['Emerging', 'Downgraded by MSCI in 2013'],
+            caption: 'Summer 2015: capital controls, a referendum and a third bailout.' },
+    2020: { rating: ['Junk', 'Still below investment grade'], debt: ['209.4%', 'The pandemic peak'], jobs: ['17.6%', 'Falling, slowly'], market: ['Emerging', 'Outside the big funds'],
+            caption: '2020: the pandemic pushes debt to its peak while the reforms keep going.' },
+    2026: { rating: ['BBB', 'Investment grade since 2023, at every major agency since 2025'], debt: ['145.4%', 'Latest year, 2025'], jobs: ['7.6%', 'September 2026, from 28.3% in 2013'], market: ['Developed', 'FTSE Russell, S&P DJI, STOXX; MSCI from May 2027'],
+            caption: 'Today: investment grade, a developed market, record foreign investment and record tourism receipts.' }
+  };
+  const btns = [...document.querySelectorAll('.era-switch button')];
+  const setEra = (y) => {
+    const e = eras[y];
+    btns.forEach(b => b.setAttribute('aria-pressed', b.dataset.era === y ? 'true' : 'false'));
+    for (const k of ['rating', 'debt', 'jobs', 'market']) {
+      document.querySelector(`[data-k="${k}"]`).textContent = e[k][0];
+      document.querySelector(`[data-n="${k}"]`).textContent = e[k][1];
+    }
+    document.getElementById('eraCaption').textContent = e.caption;
+  };
+  btns.forEach(b => b.addEventListener('click', () => setEra(b.dataset.era)));
+  setEra('2026');
+
+  /* ---------- Chart helpers ---------- */
+  const NS = 'http://www.w3.org/2000/svg';
+  const mk = (tag, attrs, parent) => { const el = document.createElementNS(NS, tag); for (const k in attrs) el.setAttribute(k, attrs[k]); parent && parent.appendChild(el); return el; };
+  const label = (svg, x, y, text, anchor = 'middle', bold = true) => { mk('text', { x, y, 'text-anchor': anchor, fill: bold ? 'var(--ink)' : 'var(--muted)', 'font-size': bold ? 13 : 12, 'font-weight': bold ? 600 : 400, 'font-family': bold ? 'var(--f-body)' : 'var(--f-mono)' }, svg).textContent = text; };
+  const tipFor = (fig) => { const t = document.createElement('div'); t.className = 'tip'; t.hidden = true; fig.style.position = 'relative'; fig.appendChild(t); return t; };
+  const place = (fig, tip, svg, x, y, text) => {
+    const r = svg.getBoundingClientRect(), fr = fig.getBoundingClientRect(), s = r.width / svg.viewBox.baseVal.width;
+    tip.textContent = text; tip.hidden = false; tip.style.left = (r.left - fr.left + x * s) + 'px'; tip.style.top = (r.top - fr.top + y * s) + 'px';
+  };
+
+  /* Line chart: series = [{data:[[x,y]], color, dash, area}], hover snaps to the first series' x values. */
+  const lineChart = (id, o) => {
+    const fig = document.getElementById(id), svg = fig.querySelector('svg'), tip = tipFor(fig);
+    const W = svg.viewBox.baseVal.width, H = svg.viewBox.baseVal.height, L = 44, R = 18, T = 18, B = 30;
+    const x = (v) => L + (v - o.x0) / (o.x1 - o.x0) * (W - L - R), y = (v) => T + (1 - (v - o.y0) / (o.y1 - o.y0)) * (H - T - B);
+    const g = mk('g', { class: 'grid' }, svg), ax = mk('g', { class: 'axis' }, svg);
+    o.yTicks.forEach(v => { mk('line', { x1: L, x2: W - R, y1: y(v), y2: y(v) }, g); mk('text', { x: L - 8, y: y(v) + 4, 'text-anchor': 'end' }, ax).textContent = (v >= 1000 && o.k !== false ? (v / 1000) + 'k' : v.toLocaleString('en-GB')) + o.unit; });
+    o.xTicks.forEach(v => mk('text', { x: x(v), y: H - 8, 'text-anchor': 'middle' }, ax).textContent = v);
+    const path = (d) => d.map(([a, b], i) => (i ? 'L' : 'M') + x(a).toFixed(1) + ' ' + y(b).toFixed(1)).join(' ');
+    o.series.slice().reverse().forEach(s => {
+      if (s.area) mk('path', { d: path(s.data) + ` L${x(s.data[s.data.length - 1][0])} ${y(o.y0)} L${x(s.data[0][0])} ${y(o.y0)} Z`, fill: s.color, 'fill-opacity': '.08' }, svg);
+      mk('path', { d: path(s.data), fill: 'none', stroke: s.color, 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round', ...(s.dash ? { 'stroke-dasharray': '5 5', opacity: .75 } : {}) }, svg);
+    });
+    (o.marks || []).forEach(([a, b, text, dy]) => { mk('circle', { cx: x(a), cy: y(b), r: 5, fill: o.series[0].color, stroke: 'var(--surface)', 'stroke-width': 2 }, svg); label(svg, x(a), y(b) + dy, text); });
+    (o.notes || []).forEach(([a, b, text, anchor]) => label(svg, x(a), y(b), text, anchor, false));
+    const pts = o.series.filter(s => !s.noHover).flatMap(s => s.data.map(p => [...p, s.name]));
+    const cross = mk('line', { y1: T, y2: H - B, stroke: 'var(--muted)', 'stroke-dasharray': '3 3', opacity: 0 }, svg);
+    const hit = mk('rect', { x: L, y: T, width: W - L - R, height: H - T - B, fill: 'transparent' }, svg);
+    const move = (ev) => {
+      const r = svg.getBoundingClientRect(), px = (ev.clientX - r.left) / r.width * W, py = (ev.clientY - r.top) / r.height * H;
+      const xv = Math.round(o.x0 + (px - L) / (W - L - R) * (o.x1 - o.x0));
+      const at = pts.filter(p => p[0] === xv); if (!at.length) return;
+      const best = at.reduce((m, p) => Math.abs(y(p[1]) - py) < Math.abs(y(m[1]) - py) ? p : m);
+      cross.setAttribute('x1', x(xv)); cross.setAttribute('x2', x(xv)); cross.setAttribute('opacity', 1);
+      place(fig, tip, svg, x(xv), y(best[1]), o.tip(best));
+    };
+    hit.addEventListener('pointermove', move); hit.addEventListener('pointerdown', move);
+    hit.addEventListener('pointerleave', () => { tip.hidden = true; cross.setAttribute('opacity', 0); });
+  };
+
+  /* Bar chart: data = [[label, a, b?]]; one or two series. */
+  const barChart = (id, o) => {
+    const fig = document.getElementById(id), svg = fig.querySelector('svg'), tip = tipFor(fig);
+    const W = svg.viewBox.baseVal.width, H = svg.viewBox.baseVal.height, L = 40, R = 10, T = 22, B = 30;
+    const y = (v) => T + (1 - v / o.max) * (H - T - B);
+    const g = mk('g', { class: 'grid' }, svg), ax = mk('g', { class: 'axis' }, svg);
+    o.ticks.forEach(v => { mk('line', { x1: L, x2: W - R, y1: y(v), y2: y(v) }, g); mk('text', { x: L - 8, y: y(v) + 4, 'text-anchor': 'end' }, ax).textContent = o.fmt(v); });
+    const two = o.data[0].length > 2, band = (W - L - R) / o.data.length, bw = Math.min(two ? 30 : 40, band * (two ? .3 : .55));
+    const bar = (cx, v, fill, text) => {
+      const top = y(v), h = y(0) - top, r = Math.min(4, h);
+      mk('path', { d: `M${cx - bw / 2} ${y(0)} V${top + r} Q${cx - bw / 2} ${top} ${cx - bw / 2 + r} ${top} H${cx + bw / 2 - r} Q${cx + bw / 2} ${top} ${cx + bw / 2} ${top + r} V${y(0)} Z`, fill }, svg);
+      const hit = mk('rect', { x: cx - Math.max(bw, 20) / 2 - 4, y: T, width: Math.max(bw, 20) + 8, height: H - T - B, fill: 'transparent' }, svg);
+      const on = () => place(fig, tip, svg, cx, top, text); hit.addEventListener('pointerenter', on); hit.addEventListener('pointerdown', on);
+      hit.addEventListener('pointerleave', () => tip.hidden = true);
+    };
+    o.data.forEach((d, i) => {
+      const cx = L + band * (i + .5);
+      if (two) { bar(cx - bw / 2 - 1, d[1], 'var(--accent)', d[0] + ' ' + o.names[0] + ': ' + o.fmt(d[1])); bar(cx + bw / 2 + 1, d[2], 'var(--series-2)', d[0] + ' ' + o.names[1] + ': ' + o.fmt(d[2])); }
+      else bar(cx, d[1], i === o.data.length - 1 || !o.highlightLast ? 'var(--accent)' : 'var(--series-2)', d[0] + ': ' + o.fmt(d[1]));
+      mk('text', { x: cx, y: H - 8, 'text-anchor': 'middle' }, ax).textContent = d[0];
+    });
+    if (o.lastLabel) { const d = o.data[o.data.length - 1]; label(svg, L + band * (o.data.length - .5), y(d[1]) - 8, o.lastLabel); }
+  };
+
+  /* ---------- Charts (verified series, 22 Nov 2026) ---------- */
+  lineChart('debtChart', {
+    x0: 2015, x1: 2030, y0: 100, y1: 220, yTicks: [100, 140, 180, 220], xTicks: [2015, 2020, 2025, 2030], unit: '%',
+    series: [
+      { name: 'Actual', color: 'var(--accent)', area: true, data: [[2015,179.6],[2016,183.1],[2017,182.1],[2018,189.0],[2019,183.2],[2020,209.4],[2021,197.3],[2022,177.8],[2023,164.0],[2024,153.5],[2025,145.4]] },
+      { name: 'IMF projection', color: 'var(--accent)', dash: true, data: [[2026,136.0],[2027,128.7],[2028,124.1],[2029,119.9],[2030,115.3]] }
+    ],
+    marks: [[2020, 209.4, '2020 peak 209.4%', -12], [2025, 145.4, '2025: 145.4%', 24]],
+    notes: [[2030, 104, 'IMF 2030: 115.3%', 'end']],
+    tip: (p) => p[0] + ': ' + p[1] + '% of GDP' + (p[2] === 'IMF projection' ? ' (IMF projection)' : '')
+  });
+  barChart('growthChart', { names: ['Greece', 'Euro area'], max: 9, ticks: [0, 2, 4, 6, 8], fmt: (v) => v + '%',
+    data: [[2021, 8.7, 6.5], [2022, 5.5, 3.7], [2023, 2.0, 0.4], [2024, 2.1, 1.3], [2025, 2.1, 1.2]] });
+  barChart('fdiChart', { max: 14, ticks: [0, 4, 8, 12], fmt: (v) => '€' + v + 'bn', highlightLast: true, lastLabel: '€12.6bn record',
+    data: [[2015, 1.1], [2016, 2.5], [2017, 3.1], [2018, 3.4], [2019, 4.5], [2020, 2.8], [2021, 5.4], [2022, 7.9], [2023, 4.8], [2024, 7.4], [2025, 12.6]] });
+  lineChart('jobsChart', {
+    x0: 2013, x1: 2025, y0: 0, y1: 30, yTicks: [0, 10, 20, 30], xTicks: [2013, 2016, 2019, 2022, 2025], unit: '%',
+    series: [
+      { name: 'Greece', color: 'var(--accent)', area: true, data: [[2013,27.8],[2014,26.6],[2015,25.0],[2016,23.9],[2017,21.8],[2018,19.7],[2019,17.9],[2020,17.6],[2021,14.7],[2022,12.5],[2023,11.1],[2024,10.1],[2025,8.9]] },
+      { name: 'Euro area', color: 'var(--series-2)', data: [[2013,12.2],[2014,11.8],[2015,11.0],[2016,10.1],[2017,9.1],[2018,8.2],[2019,7.6],[2020,7.9],[2021,7.7],[2022,6.7],[2023,6.5],[2024,6.4],[2025,6.4]] }
+    ],
+    marks: [[2013, 27.8, '27.8%', 24], [2025, 8.9, '8.9%', -14]],
+    tip: (p) => p[0] + ' ' + p[2] + ': ' + p[1] + '%'
+  });
+  lineChart('athexChart', {
+    k: false, x0: 2011, x1: 2026, y0: 0, y1: 3000, yTicks: [0, 1000, 2000, 3000], xTicks: [2011, 2016, 2021, 2026], unit: '',
+    series: [
+      { name: 'Index', color: 'var(--accent)', area: true, data: [[2011,680.42],[2012,907.90],[2013,1162.68],[2014,799.94],[2015,631.35],[2016,643.64],[2017,802.37],[2018,613.30],[2019,916.67],[2020,808.99],[2021,893.34],[2022,929.79],[2023,1293.14],[2024,1469.67],[2025,2120.71],[2026,2552.70]] },
+      { name: 'Low', color: 'var(--accent)', noHover: true, data: [] }
+    ],
+    marks: [[2015.11, 440.88, 'Feb 2016 low: 441', 24], [2026, 2552.70, '2,553', -14]],
+    tip: (p) => (p[0] === 2026 ? '20 Nov 2026' : 'End ' + p[0]) + ': ' + p[1].toLocaleString('en-GB', { maximumFractionDigits: 0 })
+  });
+  lineChart('talentChart', {
+    x0: 2010, x1: 2024, y0: 0, y1: 80000, yTicks: [0, 20000, 40000, 60000, 80000], xTicks: [2010, 2014, 2018, 2022, 2024], unit: '',
+    series: [
+      { name: 'Arriving', color: 'var(--accent)', data: [[2010,25078],[2011,27043],[2012,26194],[2013,26644],[2014,29503],[2015,30460],[2016,30747],[2017,31743],[2018,32199],[2019,34074],[2020,20864],[2021,28392],[2022,32017],[2023,46091],[2024,51993]] },
+      { name: 'Leaving', color: 'var(--series-2)', data: [[2010,28301],[2011,61268],[2012,70696],[2013,67057],[2014,59525],[2015,60516],[2016,61368],[2017,60816],[2018,57495],[2019,53415],[2020,41111],[2021,41505],[2022,40151],[2023,36931],[2024,32141]] }
+    ],
+    marks: [[2024, 51993, '52,000 arrived', -14]],
+    notes: [[2012, 74000, '70,700 left in 2012', 'middle']],
+    tip: (p) => p[0] + ' ' + p[2].toLowerCase() + ': ' + p[1].toLocaleString('en-GB')
+  });
+  barChart('techChart', { max: 800, ticks: [0, 200, 400, 600, 800], fmt: (v) => '€' + v + 'm', highlightLast: true, lastLabel: '€732m',
+    data: [[2019, 120], [2020, 150], [2021, 670], [2022, 632], [2023, 485], [2024, 555], [2025, 732]] });
+  barChart('tourismChart', { max: 26, ticks: [0, 10, 20], fmt: (v) => '€' + v + 'bn', highlightLast: true, lastLabel: '€23.6bn record',
+    data: [[2019, 18.2], [2023, 20.6], [2024, 21.6], [2025, 23.6]] });
+
+  /* Dashboard filter by bucket. */
+  const ORDER = ['Economy', 'Markets', 'Investment', 'Jobs', 'Talent', 'Tech', 'Energy', 'Tourism', 'Infrastructure', 'Health'];
+  const dash = document.getElementById('dash');
+  const cards = [...dash.querySelectorAll(':scope > .chart')].sort((a, b) => ORDER.indexOf(a.dataset.cat) - ORDER.indexOf(b.dataset.cat));
+  cards.forEach(c => dash.appendChild(c));
+  const dcats = ['All', ...new Set(cards.map(c => c.dataset.cat))];
+  const dchips = document.getElementById('dashChips');
+  let dActive = store.get('g2040-dash'); if (!dcats.includes(dActive)) dActive = 'All';
+  const renderDash = () => {
+    dchips.innerHTML = '';
+    dcats.forEach(c => { const b = document.createElement('button'); b.type = 'button'; b.textContent = c; b.setAttribute('aria-pressed', c === dActive); b.onclick = () => { dActive = c; store.set('g2040-dash', c); renderDash(); }; dchips.appendChild(b); });
+    cards.forEach(c => c.hidden = !(dActive === 'All' || c.dataset.cat === dActive));
+  };
+  renderDash();
+
+  /* ---------- Long reads: one per bucket ---------- */
+  const reads = [
+    ['Markets', 'Who has to own Greece now', 'Developed-market status changes which funds can buy Greek shares, and how much they have to hold.'],
+    ['Economy', 'Can Greece keep outgrowing Europe?', 'What has driven five years of above-average growth, and what has to happen for it to last.'],
+    ['Investment', 'Where the foreign money is going', 'Energy, hotels, data centres and logistics: which sectors are drawing capital, and from where.'],
+    ['Infrastructure', 'The infrastructure decade', 'Metros, motorways, ports and the cables that will plug Greece into Europe’s grid.'],
+    ['Energy', 'From energy importer to regional hub', 'Sun, wind and interconnectors: why Greece sits at the centre of Europe’s new energy map.'],
+    ['Tourism', 'Tourism grows up', 'A longer season and a shift from counting arrivals to the value each visitor leaves.'],
+    ['Shipping', 'The world’s biggest fleet', 'Greek owners control more of the world’s shipping than any other nation. What that means at home.'],
+    ['Tech', 'Greece’s tech scene comes of age', 'From the first big exits to the cloud regions being built near Athens.'],
+    ['Talent', 'The generation that left, and the ones coming back', 'Hundreds of thousands left during the crisis. Who is returning, and what brings them home.'],
+    ['Health', 'Rebuilding Greek healthcare', 'Hospital upgrades, digital health records and what is still to fix.'],
+    ['Politics', 'The reforms behind the recovery', 'The laws and decisions that rebuilt trust, and the ones still waiting.'],
+    ['Cities', 'Athens, the next global capital?', 'Ellinikon, new arrivals and a city that is changing fast. The case, and what stands in the way.'],
+    ['Regions', 'Beyond Athens', 'Thessaloniki, Crete, Halkidiki and the regions where the next wave of investment is landing.']
+  ];
+  const rail = document.getElementById('rail');
+  reads.forEach(([tag, title, text], i) => {
+    const a = document.createElement('a'); a.className = 'read'; a.href = '#reads';
+    a.innerHTML = '<span class="num"></span><span class="tag"></span><h3></h3><p></p><span class="meta"><span>Long read · 2,000+ words</span><span>Coming soon</span></span>';
+    a.querySelector('.num').textContent = String(i + 1).padStart(2, '0');
+    a.querySelector('.tag').textContent = tag; a.querySelector('h3').textContent = title; a.querySelector('p').textContent = text;
+    rail.appendChild(a);
+  });
+  const step = () => rail.querySelector('.read').getBoundingClientRect().width + 18;
+  document.getElementById('railPrev').onclick = () => rail.scrollBy({ left: -step(), behavior: reduce ? 'auto' : 'smooth' });
+  document.getElementById('railNext').onclick = () => rail.scrollBy({ left: step(), behavior: reduce ? 'auto' : 'smooth' });
+
+  /* ---------- Daily feed: newest first, filter by bucket ---------- */
+  const CATS = ['Economy', 'Investment', 'Markets', 'Infrastructure', 'Energy', 'Tourism', 'Shipping', 'Tech', 'Politics', 'Talent', 'Health'];
+  const feed = [
+    { d: '22 Nov', cat: 'Politics', t: 'Labour ministry tables Greece’s first law on AI and algorithmic management at work', why: 'Rules for the AI-era labour market, in step with the EU platform-work directive.', src: 'Greek City Times', url: 'https://greekcitytimes.com/2026/11/22/ai-labour-bill/' },
+    { d: '22 Nov', cat: 'Talent', t: 'Thessaloniki’s universities expand degrees taught in foreign languages', why: 'Builds Greece’s pull for international students, and gives its own a reason to stay.', src: 'Greek City Times', url: 'https://greekcitytimes.com/2026/11/22/greek-universities-expand-foreign-language-degrees/' },
+    { d: '16 Nov', cat: 'Tech', t: 'National investment fund takes 23% stake in Data4 Greece to enter the data-centre market', why: 'State capital follows private money into digital infrastructure.', src: 'Protothema', url: 'https://en.protothema.gr/2026/11/16/national-investment-fund-takes-23-stake-in-data4-greece-to-enter-data-centre-market/' },
+    { d: '16 Nov', cat: 'Energy', t: 'Dodecanese islands to be connected to the mainland grid with a €228.9m EU grant', why: 'Another island group off diesel and onto the national grid.', src: 'European Commission (CINEA)', url: 'https://cinea.ec.europa.eu/news-events/news/greek-dodecanese-islands-will-be-connected-mainland-grid-thanks-eur2289-million-eu-grant-2026-11-16_en' },
+    { d: '16 Nov', cat: 'Economy', t: 'Morgan Stanley on Greece’s growth outlook', why: 'A global bank’s read on where the economy goes next.', src: 'Greek Reporter', url: 'https://greekreporter.com/2026/11/16/greece-economic-growth-morgan-stanley/' },
+    { d: '15 Nov', cat: 'Tourism', t: 'Greek tourism set for a fourth consecutive record year', why: 'Four records in a row, with the ministry pushing value over volume.', src: 'Greek City Times', url: 'https://greekcitytimes.com/2026/11/15/greek-tourism-set-for-fourth-consecutive-record-year/' },
+    { d: '13 Nov', cat: 'Tourism', t: 'Wyndham signs deal for 174 branded villas in Halkidiki', why: 'Global hotel brands are moving beyond Athens and the islands.', src: 'GTP', url: 'https://news.gtp.gr/2026/11/13/wyndham-signs-deal-for-174-branded-villas-in-halkidiki/' },
+    { d: '12 Nov', cat: 'Politics', t: 'Parliament votes on tax cuts and new benefits, including child investment accounts', why: 'Moves the tax burden away from families and regional business.', src: 'To Vima', url: 'https://www.tovima.com/politics/greece-parliament-to-vote-on-tax-cuts-and-new-benefits' },
+    { d: '9 Nov', cat: 'Tech', t: 'Greece commits €120m to the European Tech Champions Initiative', why: 'More late-stage growth capital within reach of Greek scale-ups.', src: 'Sofokleous10', url: 'https://sofokleous10.gr/2026/11/09/greece-commits-e120-million-to-european-drive-to-create-global-technology-champions/' },
+    { d: 'Nov', cat: 'Shipping', t: 'Greek shipowners lead the second-hand market with $6.6bn of investment', why: 'The world’s largest merchant fleet keeps buying.', src: 'Naftemporiki', url: 'https://www.naftemporiki.gr/english/2189775/greek-shipowners-lead-the-secondhand-market-with-6-6-billion-in-investments/' },
+    { d: 'Nov', cat: 'Markets', t: 'Athens Stock Exchange heads for a 20-year high in new listings', why: 'Companies are choosing Athens to raise money again.', src: 'Naftemporiki', url: 'https://www.naftemporiki.gr/english/2186857/athens-stock-exchange-poised-for-20-year-high-in-new-listings/' },
+    { d: 'Nov', cat: 'Investment', t: 'EY Attractiveness Survey: Greece 2026', why: 'What foreign investors say about Greece this year.', src: 'EY', url: 'https://www.ey.com/en_gr/foreign-direct-investment-surveys/ey-attractiveness-survey-greece-2026' },
+    { d: '5 Oct', cat: 'Politics', t: 'Draft 2027 budget sees debt falling to 128.8% of GDP', why: 'The debt path is the backbone of Greece’s investment grade.', src: 'Cyprus Mail', url: 'https://cyprus-mail.com/2026/10/05/greece-projects-faster-2027-growth-steeper-debt-ratio-decline' }
+  ];
+  const PAGE = 8;
+  const chips = document.getElementById('chips'), list = document.getElementById('feedList'), more = document.getElementById('feedMore');
+  let active = store.get('g2040-cat'); if (![ 'All', ...CATS ].includes(active)) active = 'All';
+  let shown = PAGE;
+  const renderFeed = () => {
+    chips.innerHTML = '';
+    ['All', ...CATS].forEach(c => { const b = document.createElement('button'); b.type = 'button'; b.textContent = c; b.setAttribute('aria-pressed', c === active); b.onclick = () => { active = c; shown = PAGE; store.set('g2040-cat', c); renderFeed(); }; chips.appendChild(b); });
+    list.innerHTML = '';
+    const items = feed.filter(f => active === 'All' || f.cat === active);
+    if (!items.length) { const li = document.createElement('li'); li.className = 'empty'; li.style.display = 'block'; li.textContent = 'No ' + active.toLowerCase() + ' stories yet.'; list.appendChild(li); }
+    items.slice(0, shown).forEach(f => {
+      const li = document.createElement('li');
+      const t = document.createElement('time'); t.textContent = f.d;
+      const body = document.createElement('div');
+      const a = document.createElement('a'); a.href = f.url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = f.t;
+      const why = document.createElement('span'); why.className = 'why'; why.textContent = f.why;
+      const src = document.createElement('span'); src.className = 'src'; src.textContent = f.src;
+      body.append(a, why, src);
+      const cat = document.createElement('span'); cat.className = 'cat'; cat.textContent = f.cat;
+      li.append(t, body, cat); list.appendChild(li);
+    });
+    more.hidden = items.length <= shown;
+  };
+  more.onclick = () => { shown += PAGE; renderFeed(); };
+  renderFeed();
+
+  /* Sign-up (not connected yet) */
+
+})();
+</script>
+</body>
+</html>
