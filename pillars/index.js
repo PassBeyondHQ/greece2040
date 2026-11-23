@@ -199,7 +199,7 @@ window.G40_PILLARS = [
   "slug": "stock-market",
   "title": "The Athens stock market and developed-market status",
   "category": "Markets",
-  "summary": "The Athens General Index closed at 2,552.70 on 20 Nov 2026, up 479% from its closing low of 440.88 on 11 Feb 2016, though still about 52% below its 2007 peak. It rose 44% in 2025, a fifth positive year in a row, and listed companies were worth €147bn at end-2025. FTSE Russell, S&P Dow Jones Indices and STOXX moved Greece to developed-market status on 21 Sep 2026, and MSCI follows in May 2027.",
+  "summary": "The Athens General Index closed at 2,552.70 on 20 Nov 2026, up 479% from its closing low of 440.88 on 11 Feb 2016. It rose 44% in 2025, a fifth positive year in a row, and listed companies were worth €147bn at end-2025. FTSE Russell, S&P Dow Jones Indices and STOXX moved Greece to developed-market status on 21 Sep 2026, and MSCI follows in May 2027.",
   "tags": [
    "athens stock exchange",
    "euronext athens",
@@ -254,7 +254,7 @@ window.G40_PILLARS = [
    },
    {
     "id": "risks",
-    "title": "What could go wrong",
+    "title": "What to watch",
     "number": "9.1x P/E"
    }
   ]
@@ -299,7 +299,7 @@ window.G40_PILLARS = [
    {
     "id": "spread-drivers",
     "title": "What sets the spread now",
-    "number": "0.99 pts in Oct 2026"
+    "number": "145.4% debt in 2025"
    },
    {
     "id": "bad-loans",
@@ -313,7 +313,7 @@ window.G40_PILLARS = [
    },
    {
     "id": "what-to-watch",
-    "title": "What to watch: the road to an A rating",
+    "title": "What to watch",
     "number": "Moody's outlook positive"
    }
   ]
@@ -322,7 +322,7 @@ window.G40_PILLARS = [
   "slug": "jobs",
   "title": "Jobs, unemployment and wages",
   "category": "Jobs",
-  "summary": "Greek unemployment fell from 27.8% in 2013 to 8.9% in 2025, and the monthly rate reached 7.4% in August 2026, the lowest since May 2008 (Eurostat). A record 71.0% of 20–64 year-olds are in work and the minimum wage is €920. The catches: fewer people work than in 2009, long-term unemployment is the EU's highest, and average pay is still below 2008 even before inflation.",
+  "summary": "Greek unemployment fell from 27.8% in 2013 to 8.9% in 2025, and the monthly rate reached 7.4% in August 2026, the lowest since May 2008 (Eurostat). A record 71.0% of 20–64 year-olds are in work and the minimum wage is €920.",
   "tags": [
    "unemployment",
    "employment",
@@ -347,12 +347,12 @@ window.G40_PILLARS = [
    },
    {
     "id": "long-term",
-    "title": "More than half of the unemployed have been out of work for a year or longer",
+    "title": "Long-term unemployment is down from 17.5% to 5.0%",
     "number": "5.0%"
    },
    {
     "id": "employment-rate",
-    "title": "A record share of adults is in work, but fewer people than in 2009",
+    "title": "A record share of adults is in work",
     "number": "71.0%"
    },
    {
@@ -372,12 +372,12 @@ window.G40_PILLARS = [
    },
    {
     "id": "shortages",
-    "title": "Hotels and builders now struggle to find staff",
-    "number": "77%"
+    "title": "Job vacancies have more than tripled since 2019",
+    "number": "41,912"
    },
    {
     "id": "wages-productivity",
-    "title": "Pay and productivity are the unfinished part of the recovery",
+    "title": "What to watch",
     "number": "54.1%"
    }
   ]
