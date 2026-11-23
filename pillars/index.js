@@ -4,7 +4,7 @@ window.G40_PILLARS = [
   "slug": "public-finances",
   "title": "Greek public debt and the budget",
   "category": "Economy",
-  "summary": "Greece's public debt fell from a peak of 209.4% of GDP in 2020 to 145.4% in 2025, and the budget swung from a deficit of 9.9% of GDP to a surplus of 2.0% (Eurostat, Oct 2026). Debt in euros barely changed: the ratio fell because nominal GDP grew by about half. Greece is still the most indebted country in the euro area, and the IMF projects 115.3% by 2030.",
+  "summary": "Greece's public debt fell from a peak of 209.4% of GDP in 2020 to 145.4% in 2025, and the budget swung from a deficit of 9.9% of GDP to a surplus of 2.0% (Eurostat, Oct 2026). Debt in euros barely changed: the ratio fell because nominal GDP grew by about half. The IMF projects 115.3% by 2030.",
   "tags": [
    "public debt",
    "budget",
@@ -44,13 +44,13 @@ window.G40_PILLARS = [
    },
    {
     "id": "structure",
-    "title": "Greek debt is large, but cheap and long",
+    "title": "Greek debt is cheap and long",
     "number": "3.1%"
    },
    {
     "id": "compare",
-    "title": "Greece is still the most indebted country in the euro area",
-    "number": "145.4%"
+    "title": "The largest fall in debt in the euro area",
+    "number": "−64.0 pts"
    },
    {
     "id": "forecasts",
@@ -66,9 +66,9 @@ window.G40_PILLARS = [
  },
  {
   "slug": "growth",
-  "title": "Greece is growing faster than the euro area, but has not yet won back 2008",
+  "title": "Greece is growing faster than the euro area",
   "category": "Economy",
-  "summary": "Greece's real GDP grew 2.1% in 2025 against 1.2% for the euro area (Eurostat), the fifth straight year of faster growth. Household spending, investment backed by EU recovery funds, and exports drove it. The economy is still 13.9% smaller than in 2008, and GDP per head is 69.6% of the EU average. The Commission expects growth to slow to 1.5% by 2027 as recovery money ends.",
+  "summary": "Greece's real GDP grew 2.1% in 2025 against 1.2% for the euro area (Eurostat), the fifth straight year of faster growth. Household spending, investment backed by EU recovery funds, and exports drove it.",
   "tags": [
    "economic growth",
    "gdp",
@@ -89,8 +89,8 @@ window.G40_PILLARS = [
    },
    {
     "id": "depression",
-    "title": "The economy is still smaller than in 2008",
-    "number": "−13.9%"
+    "title": "Output has climbed 18% from its 2013 low",
+    "number": "+18.0%"
    },
    {
     "id": "drivers",
@@ -99,7 +99,7 @@ window.G40_PILLARS = [
    },
    {
     "id": "income",
-    "title": "GDP per head is 69.6% of the EU average",
+    "title": "GDP per head has risen to 69.6% of the EU average",
     "number": "69.6%"
    },
    {
@@ -118,14 +118,14 @@ window.G40_PILLARS = [
     "number": "+16.1%"
    },
    {
-    "id": "productivity",
-    "title": "Productivity is the missing piece",
-    "number": "54.1% of EU"
+    "id": "outlook",
+    "title": "Forecasts: faster than the euro area to 2028",
+    "number": "1.5% (EC, 2027)"
    },
    {
-    "id": "outlook",
-    "title": "Forecasts: slower growth from 2027",
-    "number": "1.5% (EC, 2027)"
+    "id": "watch",
+    "title": "What to watch",
+    "number": ""
    }
   ]
  },
@@ -133,7 +133,7 @@ window.G40_PILLARS = [
   "slug": "investment",
   "title": "Foreign direct investment in Greece",
   "category": "Investment",
-  "summary": "Foreign companies and investors put a net €12.6bn into Greece in 2025, the most in the Bank of Greece's series since 2002 and 68.9% more than in 2024. A third went into electricity. Another €8.3bn arrived in January–September 2026 (provisional). Even so, foreign-owned capital in Greece equals 37% of GDP, well below Portugal (71%) or Spain (59%).",
+  "summary": "Foreign companies and investors put a net €12.6bn into Greece in 2025, the most in the Bank of Greece's series since 2002 and 68.9% more than in 2024. A third went into electricity. Another €8.3bn arrived in January–September 2026 (provisional). ",
   "tags": [
    "foreign direct investment",
    "fdi",
@@ -180,12 +180,12 @@ window.G40_PILLARS = [
    },
    {
     "id": "stock",
-    "title": "Greece still hosts less foreign capital than its peers",
+    "title": "Foreign capital has nearly tripled as a share of GDP since 2015",
     "number": "37.1% of GDP"
    },
    {
     "id": "gulf",
-    "title": "Gulf money: one big deal done, much more promised",
+    "title": "Gulf money: Masdar's €3.2bn deal for Terna Energy",
     "number": "€3.2bn closed"
    },
    {
@@ -386,7 +386,7 @@ window.G40_PILLARS = [
   "slug": "talent",
   "title": "Brain drain and brain regain",
   "category": "Talent",
-  "summary": "In 2024, 51,993 Greek citizens settled in Greece and 32,141 left, a net gain of 19,852 and the second positive year in a row, according to ELSTAT estimates published by Eurostat. Departures have more than halved since the 2012 peak of 70,696. The gain is still small: 2023–24 added about 29,000 Greek citizens, against a net loss of about 328,000 in 2010–2022.",
+  "summary": "In 2024, 51,993 Greek citizens settled in Greece and 32,141 left, a net gain of 19,852 and the second positive year in a row, according to ELSTAT estimates published by Eurostat. Departures have more than halved since the 2012 peak of 70,696.",
   "tags": [
    "brain drain",
    "brain regain",
@@ -408,7 +408,7 @@ window.G40_PILLARS = [
    },
    {
     "id": "net-balance",
-    "title": "The balance turned positive in 2023, but the hole is still deep",
+    "title": "The balance turned positive in 2023",
     "number": "+19,852"
    },
    {
@@ -433,13 +433,8 @@ window.G40_PILLARS = [
    },
    {
     "id": "education",
-    "title": "Degrees: ahead of the EU for a decade, behind in 2025",
-    "number": "42.8% vs 44.8%"
-   },
-   {
-    "id": "demographics",
-    "title": "Why every returnee counts: a shrinking working-age population",
-    "number": "−771,000"
+    "title": "Degrees: ahead of the EU for a decade",
+    "number": "30.6% → 42.8%"
    },
    {
     "id": "what-to-watch",
@@ -452,7 +447,7 @@ window.G40_PILLARS = [
   "slug": "tech",
   "title": "Startups and the tech sector",
   "category": "Tech",
-  "summary": "Greek startups raised more than €732m in 2025, about six times the €120m of 2019, according to Found.ation. Microsoft, Google and Data4 are building data centres near Athens, and Greeks now use online public services more than the EU average (61% against 58% in 2025, Eurostat). But the ICT sector is still 3.5% of the economy against 5.6% in the EU, and basic digital skills are falling behind.",
+  "summary": "Greek startups raised more than €732m in 2025, about six times the €120m of 2019, according to Found.ation. Microsoft, Google and Data4 are building data centres near Athens, and Greeks now use online public services more than the EU average (61% against 58% in 2025, Eurostat).",
   "tags": [
    "startups",
    "venture capital",
@@ -482,7 +477,7 @@ window.G40_PILLARS = [
    },
    {
     "id": "big-tech",
-    "title": "Big tech is building, but most of it is not switched on yet",
+    "title": "Big tech is building in Greece",
     "number": "early 2028 (Microsoft)"
    },
    {
@@ -492,18 +487,13 @@ window.G40_PILLARS = [
    },
    {
     "id": "ict-gap",
-    "title": "The tech sector is still a smaller slice of the economy than in the EU",
-    "number": "3.5% vs 5.6%"
-   },
-   {
-    "id": "digital-skills",
-    "title": "Basic digital skills are falling behind",
-    "number": "51% vs 60%"
+    "title": "The tech sector has grown since 2019",
+    "number": "3.5%"
    },
    {
     "id": "ai-data-centres",
-    "title": "AI and data centres: Greeks use AI, Greek firms mostly don't",
-    "number": "8.9% vs 20.0%"
+    "title": "AI and data centres: Greeks use generative AI more than the EU average",
+    "number": "44.1% vs 32.7%"
    },
    {
     "id": "watch",
@@ -516,7 +506,7 @@ window.G40_PILLARS = [
   "slug": "energy",
   "title": "Greece is almost out of lignite, and now exports electricity",
   "category": "Energy",
-  "summary": "Lignite made 54% of Greek electricity in 2010 and 4.7% in 2025 (Ember). The largest lignite plant, Agios Dimitrios, closed on 15 May 2026, and the last unit is due to stop burning lignite by end-2026. Wind and solar made 40.6% of generation in 2025, against 30.2% in the EU, but gas rose to 40.3% and the renewables share slipped for a second year.",
+  "summary": "Lignite made 54% of Greek electricity in 2010 and 4.7% in 2025 (Ember). The largest lignite plant, Agios Dimitrios, closed on 15 May 2026, and the last unit is due to stop burning lignite by end-2026. Wind and solar made 40.6% of generation in 2025, against 30.2% in the EU.",
   "tags": [
    "energy",
    "lignite",
@@ -536,13 +526,8 @@ window.G40_PILLARS = [
    },
    {
     "id": "mix",
-    "title": "Sun and wind replaced lignite, and gas filled the gaps",
+    "title": "Sun and wind replaced lignite",
     "number": "40.6%"
-   },
-   {
-    "id": "renewables-slip",
-    "title": "Why the renewables share slipped two years running",
-    "number": "47.7%"
    },
    {
     "id": "exports",
@@ -571,7 +556,7 @@ window.G40_PILLARS = [
    },
    {
     "id": "watch",
-    "title": "What to watch: storage, offshore wind and the 2030 plan",
+    "title": "What to watch",
     "number": "13.5 GW"
    }
   ]
@@ -580,7 +565,7 @@ window.G40_PILLARS = [
   "slug": "tourism",
   "title": "Tourism",
   "category": "Tourism",
-  "summary": "Foreign visitors spent a record €23.6bn in Greece in 2025, more than double the 2010 figure, and 38m of them came, also a record, according to the Bank of Greece. Receipts rose another 9.7% in January–September 2026. Most of the growth comes from more visitors rather than bigger spending per trip, which is why the government now talks about value, a longer season and regions beyond the busiest islands.",
+  "summary": "Foreign visitors spent a record €23.6bn in Greece in 2025, more than double the 2010 figure, and 38m of them came, also a record, according to the Bank of Greece. Receipts rose another 9.7% in January–September 2026. ",
   "tags": [
    "tourism receipts",
    "visitors",
@@ -605,8 +590,8 @@ window.G40_PILLARS = [
    },
    {
     "id": "spending",
-    "title": "The growth comes from more visitors, not bigger spending per trip",
-    "number": "€546 per trip"
+    "title": "Visitors spend more per night",
+    "number": "€96.6 per night"
    },
    {
     "id": "economy",
@@ -615,7 +600,7 @@ window.G40_PILLARS = [
    },
    {
     "id": "season",
-    "title": "The season is longer than in 2010, but the progress has stalled",
+    "title": "The season is longer than in 2010",
     "number": "57.5% of nights outside July–August"
    },
    {
@@ -644,7 +629,7 @@ window.G40_PILLARS = [
   "slug": "infrastructure",
   "title": "Infrastructure and big projects",
   "category": "Infrastructure",
-  "summary": "Greece opened the full 182 km E65 motorway on 23 Jul 2026 and now runs 18 Thessaloniki Metro stations, a project that cost over €3bn. At Ellinikon, €8bn of investment is planned over about 25 years (EBRD). The EU Recovery Fund, worth €35.95bn to Greece, paid for much of the build-out. Other projects lag: Athens Metro Line 4 is now due in 2032, and Eurostat shows construction output still below its 2016 level.",
+  "summary": "Greece opened the full 182 km E65 motorway on 23 Jul 2026 and now runs 18 Thessaloniki Metro stations, a project that cost over €3bn. At Ellinikon, €8bn of investment is planned over about 25 years (EBRD). The EU Recovery Fund, worth €35.95bn to Greece, paid for much of the build-out. ",
   "tags": [
    "infrastructure",
    "motorways",
@@ -676,7 +661,7 @@ window.G40_PILLARS = [
    },
    {
     "id": "recovery-fund",
-    "title": "The Recovery Fund paid for much of the build-out, and its clock runs out in 2026",
+    "title": "The Recovery Fund paid for much of the build-out",
     "number": "€35.95bn"
    },
    {
@@ -691,8 +676,8 @@ window.G40_PILLARS = [
    },
    {
     "id": "construction",
-    "title": "Construction is back from near zero, but still below 2016",
-    "number": "−23.5%"
+    "title": "Construction output has risen by about half since 2021",
+    "number": "41,700 homes permitted (2024)"
    },
    {
     "id": "funding",
@@ -701,7 +686,7 @@ window.G40_PILLARS = [
    },
    {
     "id": "watch",
-    "title": "What to watch to 2030",
+    "title": "What to watch",
     "number": "2028"
    }
   ]
@@ -710,7 +695,7 @@ window.G40_PILLARS = [
   "slug": "health",
   "title": "Health and life expectancy",
   "category": "Health",
-  "summary": "Greeks now live longer than the average European: life expectancy at birth reached a record 81.9 years in 2024, against 81.5 for the EU (Eurostat). Avoidable deaths are below the EU rate. The system behind those numbers is weaker: households pay about 34% of health costs out of pocket, more than double the EU share, and 11.5% of adults reported unmet medical need in 2025, about five times the EU rate.",
+  "summary": "Greeks now live longer than the average European: life expectancy at birth reached a record 81.9 years in 2024, against 81.5 for the EU (Eurostat). Avoidable deaths are below the EU rate. The health system is being modernised: free cancer and heart screening has reached more than 6 million people, the government says, every adult is enrolled with a personal doctor, and €1.5bn of EU recovery money is going into health.",
   "tags": [
    "life expectancy",
    "health",
@@ -731,44 +716,34 @@ window.G40_PILLARS = [
     "number": "81.9 years"
    },
    {
-    "id": "eu-ranking",
-    "title": "Above the EU average, but behind its Mediterranean neighbours",
-    "number": "16th of 27"
-   },
-   {
     "id": "avoidable-deaths",
     "title": "Fewer Greeks die of causes that could have been prevented or treated",
     "number": "221 per 100k"
    },
    {
     "id": "mediterranean-diet",
-    "title": "What the diet, and Ikaria, can and can't explain",
-    "number": "28% of 15-year-olds overweight"
+    "title": "The Mediterranean diet and Ikaria",
+    "number": "12% adult obesity (EU 15%)"
    },
    {
     "id": "doctors-and-nurses",
-    "title": "Plenty of doctors, too few nurses",
-    "number": "6.6 vs 3.8 per 1,000"
+    "title": "Greece has the most doctors per person in the EU",
+    "number": "6.6 doctors per 1,000"
    },
    {
     "id": "spending",
-    "title": "Greece spends less on health than most of the EU",
-    "number": "8.4% of GDP"
-   },
-   {
-    "id": "out-of-pocket",
-    "title": "Households pay a third of the bill themselves",
-    "number": "34%"
-   },
-   {
-    "id": "unmet-need",
-    "title": "One adult in nine says they went without care they needed",
-    "number": "11.5%"
+    "title": "Public health spending per person has grown faster than the EU's",
+    "number": "+26% per person (real, 2015–23)"
    },
    {
     "id": "reforms",
-    "title": "What is being repaired, and what to watch",
+    "title": "Screening, personal doctors, digital records and new hospitals",
     "number": "€1.5bn"
+   },
+   {
+    "id": "watch",
+    "title": "What to watch",
+    "number": "End-2027 SNF hospitals"
    }
   ]
  }
