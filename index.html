@@ -48,7 +48,8 @@
   --rule: #22303C; --accent: #5B9BFF; --accent-ink: #06101A; --series-2: #5D6B78; --draft: #F0A15C; color-scheme: dark; }
 
 * { box-sizing: border-box; }
-body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.55; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.55; }
+.hero > .wrap { width: 100%; }
 a { color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .wrap { max-width: var(--wrap); margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
@@ -68,6 +69,10 @@ section { padding-block: clamp(64px, 9vw, 120px); }
 .nav { display: flex; gap: 22px; font-size: 14px; font-weight: 500; }
 .nav a { text-decoration: none; opacity: .85; }
 .nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
+.menu-btn { display: none; align-items: center; gap: 8px; font: 500 14px var(--f-body); color: inherit; background: rgba(5,9,13,.35); border: 1px solid rgba(255,255,255,.35); border-radius: 6px; padding: 8px 12px; cursor: pointer; }
+.menu-btn i, .menu-btn i::before, .menu-btn i::after { display: block; width: 16px; height: 2px; background: currentColor; border-radius: 1px; position: relative; }
+.menu-btn i::before, .menu-btn i::after { content: ""; position: absolute; left: 0; }
+.menu-btn i::before { top: -5px; } .menu-btn i::after { top: 5px; }
 .hero-body { position: relative; z-index: 2; margin-top: auto; padding-bottom: clamp(48px, 9vh, 96px); }
 .statements { position: relative; display: grid; }
 .statement { grid-area: 1 / 1; font-family: var(--f-display); font-weight: 900; font-stretch: 118%; text-transform: uppercase; font-size: clamp(42px, 7.6vw, 108px); line-height: .92; letter-spacing: -.015em; max-width: 13ch; text-wrap: balance; margin: 0; transition: opacity .6s ease, transform .6s ease; }
@@ -159,6 +164,10 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
 
 @media (max-width: 860px) {
   .nav { display: none; }
+  .menu-btn { display: inline-flex; }
+  .topbar.menu-open .nav { display: flex; flex-direction: column; gap: 0; position: absolute; top: calc(100% + 10px); left: 0; right: 0; background: rgba(5,9,13,.94); backdrop-filter: blur(10px); padding: 4px max(20px, env(safe-area-inset-left, 0px)) 10px; }
+  .topbar.menu-open .nav a { opacity: 1; padding: 14px 0; font-size: 17px; border-bottom: 1px solid rgba(255,255,255,.14); }
+  .topbar.menu-open .nav a:last-child { border-bottom: 0; }
   .stats { grid-template-columns: minmax(0, 1fr); }
   .era-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .era-cell { padding: 18px 14px 14px 0 !important; border-right: 0; border-bottom: 1px solid var(--rule); }
@@ -184,7 +193,7 @@ a.era-cell:hover .v { color: var(--accent); }
 .era-cell .go { color: var(--accent); display: block; margin: 10px 0 8px; }
 .dash .chart[data-href] .more-link { font-family: var(--f-mono); font-size: 12px; color: var(--accent); text-decoration: none; margin-top: 12px; display: inline-block; }
 .dash .chart[data-href] .more-link:hover { text-decoration: underline; }
-.dash .chart.kpi[data-href] { cursor: pointer; }
+.dash .chart[data-href] { cursor: pointer; }
 .dash .chart[data-href]:hover { border-color: var(--accent); }
 .hub-link { display: inline-block; margin-top: 22px; font-weight: 600; color: var(--accent); text-decoration: none; }
 .hub-link:hover { text-decoration: underline; }
@@ -210,7 +219,8 @@ a.era-cell:hover .v { color: var(--accent); }
   <video id="heroVideo" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
   <div class="wrap topbar">
     <a class="mark" href="#top" aria-label="Greece 2040 home">GREECE <b>2040</b></a>
-    <nav class="nav" aria-label="Sections">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" onclick="var o=this.parentNode.classList.toggle('menu-open');this.setAttribute('aria-expanded',o)"><i></i>Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Sections" onclick="if(event.target.closest('a')){this.parentNode.classList.remove('menu-open');this.previousElementSibling.setAttribute('aria-expanded','false')}">
       <a href="#numbers">The transformation</a>
       <a href="#picture">The whole picture</a>
       <a href="hub.html">Resource hub</a>
@@ -698,7 +708,7 @@ a.era-cell:hover .v { color: var(--accent); }
     if (!c.dataset.href) return;
     const a = document.createElement('a'); a.className = 'more-link'; a.href = c.dataset.href; a.textContent = 'The full story →';
     c.appendChild(a);
-    if (c.classList.contains('kpi')) c.addEventListener('click', (e) => { if (!e.target.closest('a')) location.href = c.dataset.href; });
+    c.addEventListener('click', (e) => { if (!e.target.closest('a, button')) location.href = c.dataset.href; });
   });
 
   /* ---------- Long reads: one per bucket ---------- */

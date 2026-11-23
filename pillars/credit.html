@@ -45,10 +45,12 @@
 <header class="bar">
   <div class="wrap">
     <a class="mark" href="../index.html" aria-label="Greece 2040 home">GREECE <b>2040</b></a>
-    <nav aria-label="Site">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" onclick="var o=this.closest('.bar').classList.toggle('menu-open');this.setAttribute('aria-expanded',o)"><i></i>Menu</button>
+    <nav id="site-nav" aria-label="Site">
       <a href="../index.html#picture">The numbers</a>
       <a href="../hub.html">Resource hub</a>
       <a href="../index.html#feed">Daily feed</a>
+      <a href="../index.html#signup">Newsletter</a>
     </nav>
   </div>
 </header>
