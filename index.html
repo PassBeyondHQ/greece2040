@@ -14,6 +14,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<!--BUILD:seo--><link rel="canonical" href="https://greece2040.com/">
+<meta property="og:site_name" content="Greece 2040">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "Greece 2040", "url": "https://greece2040.com/", "inLanguage": "en", "description": "Greece's transformation, in numbers.", "potentialAction": {"@type": "SearchAction", "target": "https://greece2040.com/hub.html?q={search_term_string}", "query-input": "required name=search_term_string"}}, {"@type": "Organization", "name": "Greece 2040", "url": "https://greece2040.com/", "description": "An independent, non-profit platform about Greece's future.", "nonprofitStatus": "Nonprofit"}]}</script>
+<!--/BUILD:seo-->
 </head>
 <body>
 <style>
@@ -171,6 +175,19 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
 </style>
 
 <style>
+/* v6: every number links to its pillar section */
+a.stat { color: inherit; text-decoration: none; }
+a.stat:hover .n { color: var(--series-2); }
+.stat .go, .era-cell .go { font-family: var(--f-mono); font-size: 11.5px; color: var(--series-2); padding-top: 4px; }
+a.era-cell { color: inherit; text-decoration: none; display: block; }
+a.era-cell:hover .v { color: var(--accent); }
+.era-cell .go { color: var(--accent); display: block; margin: 10px 0 8px; }
+.dash .chart[data-href] .more-link { font-family: var(--f-mono); font-size: 12px; color: var(--accent); text-decoration: none; margin-top: 12px; display: inline-block; }
+.dash .chart[data-href] .more-link:hover { text-decoration: underline; }
+.dash .chart.kpi[data-href] { cursor: pointer; }
+.dash .chart[data-href]:hover { border-color: var(--accent); }
+.hub-link { display: inline-block; margin-top: 22px; font-weight: 600; color: var(--accent); text-decoration: none; }
+.hub-link:hover { text-decoration: underline; }
 /* v3 additions: dashboard of charts and stat boxes, filtered by bucket */
 .dash { display: grid; grid-auto-flow: row dense; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
 .dash .chart { margin: 0; }
@@ -196,7 +213,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
     <nav class="nav" aria-label="Sections">
       <a href="#numbers">The transformation</a>
       <a href="#picture">The whole picture</a>
-      <a href="#reads">Long reads</a>
+      <a href="hub.html">Resource hub</a>
       <a href="#feed">Daily feed</a>
       <a href="#signup">Newsletter</a>
     </nav>
@@ -221,9 +238,9 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
     <div class="eyebrow">The evidence</div>
     <p class="big">Investment grade five years after the last bailout ended.</p>
     <div class="stats">
-      <div class="stat"><span class="n">−64 pts</span><span class="l">fall in public debt as a share of GDP since 2020</span><span class="src">Eurostat, Oct 2026</span></div>
-      <div class="stat"><span class="n">€12.6bn</span><span class="l">foreign direct investment in 2025, a record</span><span class="src">Eurostat, Bank of Greece</span></div>
-      <div class="stat"><span class="n">Developed</span><span class="l">market status since September 2026</span><span class="src">FTSE Russell, S&amp;P DJI, STOXX</span></div>
+      <a class="stat" href="pillars/public-finances.html#debt"><span class="n">−64 pts</span><span class="l">fall in public debt as a share of GDP since 2020</span><span class="src">Eurostat, Oct 2026</span><span class="go">The detail →</span></a>
+      <a class="stat" href="pillars/investment.html#fdi-record"><span class="n">€12.6bn</span><span class="l">foreign direct investment in 2025, a record</span><span class="src">Eurostat, Bank of Greece</span><span class="go">The detail →</span></a>
+      <a class="stat" href="pillars/stock-market.html#developed-market"><span class="n">Developed</span><span class="l">market status since September 2026</span><span class="src">FTSE Russell, S&amp;P DJI, STOXX</span><span class="go">The detail →</span></a>
     </div>
   </div>
 </section>
@@ -239,10 +256,10 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
       <button type="button" data-era="2026" aria-pressed="true">2026</button>
     </div>
     <div class="era-grid" id="eraGrid">
-      <div class="era-cell"><div class="k">Credit rating</div><div class="v" data-k="rating"></div><div class="note" data-n="rating"></div></div>
-      <div class="era-cell"><div class="k">Public debt, % of GDP</div><div class="v" data-k="debt"></div><div class="note" data-n="debt"></div></div>
-      <div class="era-cell"><div class="k">Unemployment</div><div class="v" data-k="jobs"></div><div class="note" data-n="jobs"></div></div>
-      <div class="era-cell"><div class="k">Stock market status</div><div class="v" data-k="market"></div><div class="note" data-n="market"></div></div>
+      <a class="era-cell" href="pillars/credit.html#ratings"><div class="k">Credit rating</div><div class="v" data-k="rating"></div><div class="note" data-n="rating"></div><span class="go">The detail →</span></a>
+      <a class="era-cell" href="pillars/public-finances.html#debt"><div class="k">Public debt, % of GDP</div><div class="v" data-k="debt"></div><div class="note" data-n="debt"></div><span class="go">The detail →</span></a>
+      <a class="era-cell" href="pillars/jobs.html#unemployment"><div class="k">Unemployment</div><div class="v" data-k="jobs"></div><div class="note" data-n="jobs"></div><span class="go">The detail →</span></a>
+      <a class="era-cell" href="pillars/stock-market.html#developed-market"><div class="k">Stock market status</div><div class="v" data-k="market"></div><div class="note" data-n="market"></div><span class="go">The detail →</span></a>
     </div>
     <p class="era-caption" id="eraCaption"></p>
     <p class="era-caption" style="font-size:14px;color:var(--muted)">Sources: Eurostat (debt, unemployment), rating agencies via Reuters and Bloomberg, FTSE Russell, S&amp;P DJI, STOXX and MSCI. 2026 shows the latest figures: debt for 2025, unemployment for September 2026.</p>
@@ -257,7 +274,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
     <div class="chips" id="dashChips" role="group" aria-label="Filter the charts"></div>
     <div class="dash" id="dash">
 
-      <figure class="chart" data-cat="Economy" id="debtChart">
+      <figure data-href="pillars/public-finances.html#debt" class="chart" data-cat="Economy" id="debtChart">
         <span class="cat">Economy</span>
         <h3>Debt down 64 points of GDP in five years</h3>
         <p class="sub">Public debt, % of GDP · dashed: IMF projection</p>
@@ -265,7 +282,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat (Oct 2026); IMF WEO (Oct 2026)</span></div>
       </figure>
 
-      <figure class="chart" data-cat="Economy" id="growthChart">
+      <figure data-href="pillars/growth.html#growth" class="chart" data-cat="Economy" id="growthChart">
         <span class="cat">Economy</span>
         <h3>Growing faster than the euro area</h3>
         <p class="sub">Real GDP growth, % per year</p>
@@ -274,7 +291,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat (Nov 2026); 2024–25 provisional</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Economy">
+      <figure data-href="pillars/public-finances.html#surplus" class="chart kpi" data-cat="Economy">
         <span class="cat">Economy</span>
         <h3>From deficit to surplus</h3>
         <div class="kpi-n">+2.0%</div>
@@ -282,7 +299,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat, EDP notification Oct 2026</span></div>
       </figure>
 
-      <figure class="chart wide" data-cat="Investment" id="fdiChart">
+      <figure data-href="pillars/investment.html#fdi-record" class="chart wide" data-cat="Investment" id="fdiChart">
         <span class="cat">Investment</span>
         <h3>Foreign investment at a record</h3>
         <p class="sub">Net foreign direct investment into Greece, € billion</p>
@@ -290,7 +307,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat bop_fdi6_flow / Bank of Greece (Oct 2026)</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Investment">
+      <figure data-href="pillars/investment.html#fdi-2026" class="chart kpi" data-cat="Investment">
         <span class="cat">Investment</span>
         <h3>€8.3bn already this year</h3>
         <div class="kpi-n">€8.3bn</div>
@@ -298,7 +315,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Bank of Greece, 20 Nov 2026</span></div>
       </figure>
 
-      <figure class="chart wide" data-cat="Jobs" id="jobsChart">
+      <figure data-href="pillars/jobs.html#unemployment" class="chart wide" data-cat="Jobs" id="jobsChart">
         <span class="cat">Jobs</span>
         <h3>Unemployment down by two thirds</h3>
         <p class="sub">Unemployment rate, annual average, %</p>
@@ -307,7 +324,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat une_rt_a (Nov 2026)</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Jobs">
+      <figure data-href="pillars/jobs.html#lowest-since-2008" class="chart kpi" data-cat="Jobs">
         <span class="cat">Jobs</span>
         <h3>Lowest since 2008</h3>
         <div class="kpi-n">7.4%</div>
@@ -315,7 +332,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat une_rt_m, seasonally adjusted</span></div>
       </figure>
 
-      <figure class="chart" data-cat="Tourism" id="tourismChart">
+      <figure data-href="pillars/tourism.html#receipts" class="chart" data-cat="Tourism" id="tourismChart">
         <span class="cat">Tourism</span>
         <h3>Tourism earns more every year</h3>
         <p class="sub">Travel receipts, € billion (2020–22 not shown)</p>
@@ -323,7 +340,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Bank of Greece; 2025 provisional</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Infrastructure">
+      <figure data-href="pillars/infrastructure.html#e65" class="chart kpi" data-cat="Infrastructure">
         <span class="cat">Infrastructure</span>
         <h3>A motorway finished</h3>
         <div class="kpi-n">182 km</div>
@@ -331,7 +348,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>To Vima, Protothema, Jul 2026</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Infrastructure">
+      <figure data-href="pillars/infrastructure.html#thessaloniki-metro" class="chart kpi" data-cat="Infrastructure">
         <span class="cat">Infrastructure</span>
         <h3>Thessaloniki goes underground</h3>
         <div class="kpi-n">18</div>
@@ -339,7 +356,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Greek Reporter; operator announcements</span></div>
       </figure>
 
-      <figure class="chart wide" data-cat="Markets" id="athexChart">
+      <figure data-href="pillars/stock-market.html#athex" class="chart wide" data-cat="Markets" id="athexChart">
         <span class="cat">Markets</span>
         <h3>Athens shares up almost six times from the 2016 low</h3>
         <p class="sub">Athens General Index, year-end close · 2026: close on 20 Nov</p>
@@ -347,7 +364,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Euronext Athens; daily closes via Yahoo Finance. Price index, excluding dividends; still below the 2007 peak of 5,334.</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Markets">
+      <figure data-href="pillars/credit.html#bond-spread" class="chart kpi" data-cat="Markets">
         <span class="cat">Markets</span>
         <h3>Borrowing almost like Germany</h3>
         <div class="kpi-n">0.78 pts</div>
@@ -355,7 +372,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat irt_lt_mcby (ECB convergence yields)</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Markets">
+      <figure data-href="pillars/credit.html#bad-loans" class="chart kpi" data-cat="Markets">
         <span class="cat">Markets</span>
         <h3>Banks cleaned up</h3>
         <div class="kpi-n">3.4%</div>
@@ -363,7 +380,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>IMF/World Bank FSI; Bank of Greece FSR, Oct 2026</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Energy">
+      <figure data-href="pillars/energy.html#lignite" class="chart kpi" data-cat="Energy">
         <span class="cat">Energy</span>
         <h3>Out of lignite</h3>
         <div class="kpi-n">4.7%</div>
@@ -371,7 +388,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Ember; PPC announcements</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Jobs">
+      <figure data-href="pillars/jobs.html#employment-rate" class="chart kpi" data-cat="Jobs">
         <span class="cat">Jobs</span>
         <h3>The highest employment rate on record</h3>
         <div class="kpi-n">71.0%</div>
@@ -379,7 +396,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat lfsi_emp_a</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Markets">
+      <figure data-href="pillars/stock-market.html#five-years-up" class="chart kpi" data-cat="Markets">
         <span class="cat">Markets</span>
         <h3>Five years up in a row</h3>
         <div class="kpi-n">+44%</div>
@@ -387,7 +404,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Euronext Athens, Dec 2025</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Markets">
+      <figure data-href="pillars/stock-market.html#market-value" class="chart kpi" data-cat="Markets">
         <span class="cat">Markets</span>
         <h3>The market is worth more again</h3>
         <div class="kpi-n">€147bn</div>
@@ -395,7 +412,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Euronext Athens, Dec 2025</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Tourism">
+      <figure data-href="pillars/tourism.html#visitors" class="chart kpi" data-cat="Tourism">
         <span class="cat">Tourism</span>
         <h3>A record year for visitors</h3>
         <div class="kpi-n">38m</div>
@@ -403,7 +420,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Bank of Greece, Feb 2026 (provisional)</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Infrastructure">
+      <figure data-href="pillars/infrastructure.html#ellinikon" class="chart kpi" data-cat="Infrastructure">
         <span class="cat">Infrastructure</span>
         <h3>A new district for Athens</h3>
         <div class="kpi-n">€8bn</div>
@@ -411,7 +428,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>EBRD; Lamda Development</span></div>
       </figure>
 
-      <figure class="chart wide" data-cat="Talent" id="talentChart">
+      <figure data-href="pillars/talent.html#arrivals-vs-departures" class="chart wide" data-cat="Talent" id="talentChart">
         <span class="cat">Talent</span>
         <h3>More Greeks now arrive than leave</h3>
         <p class="sub">Greek citizens leaving Greece and settling in Greece, per year</p>
@@ -420,7 +437,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat migr_emi1ctz, migr_imm1ctz (ELSTAT). Arrivals include Greeks born abroad.</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Talent">
+      <figure data-href="pillars/talent.html#net-balance" class="chart kpi" data-cat="Talent">
         <span class="cat">Talent</span>
         <h3>The balance has turned</h3>
         <div class="kpi-n">+19,852</div>
@@ -428,7 +445,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat, 2024</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Jobs">
+      <figure data-href="pillars/jobs.html#youth" class="chart kpi" data-cat="Jobs">
         <span class="cat">Jobs</span>
         <h3>Young people back at work</h3>
         <div class="kpi-n">19.1%</div>
@@ -436,7 +453,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat une_rt_a</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Jobs">
+      <figure data-href="pillars/jobs.html#minimum-wage" class="chart kpi" data-cat="Jobs">
         <span class="cat">Jobs</span>
         <h3>Minimum wage up since the crisis</h3>
         <div class="kpi-n">€920</div>
@@ -444,7 +461,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Eurostat earn_mw_cur; government decisions</span></div>
       </figure>
 
-      <figure class="chart wide" data-cat="Tech" id="techChart">
+      <figure data-href="pillars/tech.html#startup-funding" class="chart wide" data-cat="Tech" id="techChart">
         <span class="cat">Tech</span>
         <h3>Startup funding six times its 2019 level</h3>
         <p class="sub">Money raised by Greek startups, € million</p>
@@ -452,7 +469,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
         <div class="foot"><span>Found.ation; figures are reported minimums. Debt financing included from 2021.</span></div>
       </figure>
 
-      <figure class="chart kpi" data-cat="Health">
+      <figure data-href="pillars/health.html#life-expectancy" class="chart kpi" data-cat="Health">
         <span class="cat">Health</span>
         <h3>Living longer than the EU</h3>
         <div class="kpi-n">81.9</div>
@@ -475,7 +492,7 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
       </div>
       <div class="rail-btns"><button type="button" id="railPrev" aria-label="Previous long reads">←</button><button type="button" id="railNext" aria-label="Next long reads">→</button></div>
     </div>
-    <div class="rail" id="rail" tabindex="0" aria-label="Long reads"></div>
+    <div class="rail" id="rail" tabindex="0" aria-label="Long reads"><!--BUILD:rail--><a class="read" href="pillars/public-finances.html"><span class="num">01</span><span class="tag">Economy</span><h3>Greek public debt and the budget</h3><p>Greece&#x27;s public debt fell from a peak of 209.4% of GDP in 2020 to 145.4% in 2025, and the budget swung from a deficit of 9.9% of GDP to a surplus of 2.0% (Eurostat, Oct 2026). Debt in euros barely changed: the ratio fell because nominal GDP grew by about half. Greece is still the most indebted country in the euro area, and the IMF projects 115.3% by 2030.</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><a class="read" href="pillars/growth.html"><span class="num">02</span><span class="tag">Economy</span><h3>Greece is growing faster than the euro area, but has not yet won back 2008</h3><p>Greece&#x27;s real GDP grew 2.1% in 2025 against 1.2% for the euro area (Eurostat), the fifth straight year of faster growth. Household spending, investment backed by EU recovery funds, and exports drove it. The economy is still 13.9% smaller than in 2008, and GDP per head is 69.6% of the EU average. The Commission expects growth to slow to 1.5% by 2027 as recovery money ends.</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><a class="read" href="pillars/investment.html"><span class="num">03</span><span class="tag">Investment</span><h3>Foreign direct investment in Greece</h3><p>Foreign companies and investors put a net €12.6bn into Greece in 2025, the most in the Bank of Greece&#x27;s series since 2002 and 68.9% more than in 2024. A third went into electricity. Another €8.3bn arrived in January–September 2026 (provisional). Even so, foreign-owned capital in Greece equals 37% of GDP, well below Portugal (71%) or Spain (59%).</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><a class="read" href="pillars/stock-market.html"><span class="num">04</span><span class="tag">Markets</span><h3>The Athens stock market and developed-market status</h3><p>The Athens General Index closed at 2,552.70 on 20 Nov 2026, up 479% from its closing low of 440.88 on 11 Feb 2016, though still about 52% below its 2007 peak. It rose 44% in 2025, a fifth positive year in a row, and listed companies were worth €147bn at end-2025. FTSE Russell, S&amp;P Dow Jones Indices and STOXX moved Greece to developed-market status on 21 Sep 2026, and MSCI follows in May 2027.</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><a class="read" href="pillars/credit.html"><span class="num">05</span><span class="tag">Markets</span><h3>Credit ratings, bond yields and the banks</h3><p>Greece is rated BBB, investment grade, after more than a decade as junk. Scope and DBRS restored investment grade in 2023, S&amp;P and Fitch followed that year and Moody&#x27;s in March 2025. Markets moved first: the 10-year spread over Germany averaged 0.78 points in 2025, against 21 points in 2012 (Eurostat), and bad loans fell to 3.4% of bank loans in June 2026, from 46% in 2017.</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><a class="read" href="pillars/jobs.html"><span class="num">06</span><span class="tag">Jobs</span><h3>Jobs, unemployment and wages</h3><p>Greek unemployment fell from 27.8% in 2013 to 8.9% in 2025, and the monthly rate reached 7.4% in August 2026, the lowest since May 2008 (Eurostat). A record 71.0% of 20–64 year-olds are in work and the minimum wage is €920. The catches: fewer people work than in 2009, long-term unemployment is the EU&#x27;s highest, and average pay is still below 2008 even before inflation.</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><a class="read" href="pillars/talent.html"><span class="num">07</span><span class="tag">Talent</span><h3>Brain drain and brain regain</h3><p>In 2024, 51,993 Greek citizens settled in Greece and 32,141 left, a net gain of 19,852 and the second positive year in a row, according to ELSTAT estimates published by Eurostat. Departures have more than halved since the 2012 peak of 70,696. The gain is still small: 2023–24 added about 29,000 Greek citizens, against a net loss of about 328,000 in 2010–2022.</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><a class="read" href="pillars/tech.html"><span class="num">08</span><span class="tag">Tech</span><h3>Startups and the tech sector</h3><p>Greek startups raised more than €732m in 2025, about six times the €120m of 2019, according to Found.ation. Microsoft, Google and Data4 are building data centres near Athens, and Greeks now use online public services more than the EU average (61% against 58% in 2025, Eurostat). But the ICT sector is still 3.5% of the economy against 5.6% in the EU, and basic digital skills are falling behind.</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><a class="read" href="pillars/energy.html"><span class="num">09</span><span class="tag">Energy</span><h3>Greece is almost out of lignite, and now exports electricity</h3><p>Lignite made 54% of Greek electricity in 2010 and 4.7% in 2025 (Ember). The largest lignite plant, Agios Dimitrios, closed on 15 May 2026, and the last unit is due to stop burning lignite by end-2026. Wind and solar made 40.6% of generation in 2025, against 30.2% in the EU, but gas rose to 40.3% and the renewables share slipped for a second year.</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><a class="read" href="pillars/tourism.html"><span class="num">10</span><span class="tag">Tourism</span><h3>Tourism</h3><p>Foreign visitors spent a record €23.6bn in Greece in 2025, more than double the 2010 figure, and 38m of them came, also a record, according to the Bank of Greece. Receipts rose another 9.7% in January–September 2026. Most of the growth comes from more visitors rather than bigger spending per trip, which is why the government now talks about value, a longer season and regions beyond the busiest islands.</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><a class="read" href="pillars/infrastructure.html"><span class="num">11</span><span class="tag">Infrastructure</span><h3>Infrastructure and big projects</h3><p>Greece opened the full 182 km E65 motorway on 23 Jul 2026 and now runs 18 Thessaloniki Metro stations, a project that cost over €3bn. At Ellinikon, €8bn of investment is planned over about 25 years (EBRD). The EU Recovery Fund, worth €35.95bn to Greece, paid for much of the build-out. Other projects lag: Athens Metro Line 4 is now due in 2032, and Eurostat shows construction output still below its 2016 level.</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><a class="read" href="pillars/health.html"><span class="num">12</span><span class="tag">Health</span><h3>Health and life expectancy</h3><p>Greeks now live longer than the average European: life expectancy at birth reached a record 81.9 years in 2024, against 81.5 for the EU (Eurostat). Avoidable deaths are below the EU rate. The system behind those numbers is weaker: households pay about 34% of health costs out of pocket, more than double the EU share, and 11.5% of adults reported unmet medical need in 2025, about five times the EU rate.</p><span class="meta"><span>Long read</span><span>Read →</span></span></a><!--/BUILD:rail--></div>
   </div>
 </section>
 
@@ -485,8 +502,9 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
     <div class="eyebrow">Daily feed</div>
     <h2>What's moving Greece.</h2>
     <div class="chips" id="chips" role="group" aria-label="Filter the feed"></div>
-    <ul class="feed" id="feedList"></ul>
+    <ul class="feed" id="feedList"><!--BUILD:feed--><li><time datetime="2026-11-22">22 Nov</time><div><a href="https://greekcitytimes.com/2026/11/22/ai-labour-bill/" target="_blank" rel="noopener">Labour ministry tables Greece’s first law on AI and algorithmic management at work</a><span class="why">Rules for the AI-era labour market, in step with the EU platform-work directive.</span><span class="src">Source: Greek City Times</span></div><span class="cat">Politics</span></li><li><time datetime="2026-11-22">22 Nov</time><div><a href="https://greekcitytimes.com/2026/11/22/greek-universities-expand-foreign-language-degrees/" target="_blank" rel="noopener">Thessaloniki’s universities expand degrees taught in foreign languages</a><span class="why">Builds Greece’s pull for international students, and gives its own a reason to stay.</span><span class="src">Source: Greek City Times</span></div><span class="cat">Talent</span></li><li><time datetime="2026-11-16">16 Nov</time><div><a href="https://en.protothema.gr/2026/11/16/national-investment-fund-takes-23-stake-in-data4-greece-to-enter-data-centre-market/" target="_blank" rel="noopener">National investment fund takes 23% stake in Data4 Greece to enter the data-centre market</a><span class="why">State capital follows private money into digital infrastructure.</span><span class="src">Source: Protothema</span></div><span class="cat">Tech</span></li><li><time datetime="2026-11-16">16 Nov</time><div><a href="https://cinea.ec.europa.eu/news-events/news/greek-dodecanese-islands-will-be-connected-mainland-grid-thanks-eur2289-million-eu-grant-2026-11-16_en" target="_blank" rel="noopener">Dodecanese islands to be connected to the mainland grid with a €228.9m EU grant</a><span class="why">Another island group off diesel and onto the national grid.</span><span class="src">Source: European Commission (CINEA)</span></div><span class="cat">Energy</span></li><li><time datetime="2026-11-16">16 Nov</time><div><a href="https://greekreporter.com/2026/11/16/greece-economic-growth-morgan-stanley/" target="_blank" rel="noopener">Morgan Stanley on Greece’s growth outlook</a><span class="why">A global bank’s read on where the economy goes next.</span><span class="src">Source: Greek Reporter</span></div><span class="cat">Economy</span></li><li><time datetime="2026-11-15">15 Nov</time><div><a href="https://greekcitytimes.com/2026/11/15/greek-tourism-set-for-fourth-consecutive-record-year/" target="_blank" rel="noopener">Greek tourism set for a fourth consecutive record year</a><span class="why">Four records in a row, with the ministry pushing value over volume.</span><span class="src">Source: Greek City Times</span></div><span class="cat">Tourism</span></li><li><time datetime="2026-11-13">13 Nov</time><div><a href="https://news.gtp.gr/2026/11/13/wyndham-signs-deal-for-174-branded-villas-in-halkidiki/" target="_blank" rel="noopener">Wyndham signs deal for 174 branded villas in Halkidiki</a><span class="why">Global hotel brands are moving beyond Athens and the islands.</span><span class="src">Source: GTP</span></div><span class="cat">Tourism</span></li><li><time datetime="2026-11-12">12 Nov</time><div><a href="https://www.tovima.com/politics/greece-parliament-to-vote-on-tax-cuts-and-new-benefits" target="_blank" rel="noopener">Parliament votes on tax cuts and new benefits, including child investment accounts</a><span class="why">Moves the tax burden away from families and regional business.</span><span class="src">Source: To Vima</span></div><span class="cat">Politics</span></li><!--/BUILD:feed--></ul>
     <button type="button" class="more" id="feedMore" hidden>Show more</button>
+    <div><a class="hub-link" href="hub.html">Search all topics and news in the resource hub →</a></div>
   </div>
 </section>
 
@@ -506,6 +524,8 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
   </div>
 </footer>
 
+<script src="pillars/index.js"></script>
+<script src="feed.js"></script>
 <script>
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -674,29 +694,21 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
     cards.forEach(c => c.hidden = !(dActive === 'All' || c.dataset.cat === dActive));
   };
   renderDash();
+  cards.forEach(c => {
+    if (!c.dataset.href) return;
+    const a = document.createElement('a'); a.className = 'more-link'; a.href = c.dataset.href; a.textContent = 'The full story →';
+    c.appendChild(a);
+    if (c.classList.contains('kpi')) c.addEventListener('click', (e) => { if (!e.target.closest('a')) location.href = c.dataset.href; });
+  });
 
   /* ---------- Long reads: one per bucket ---------- */
-  const reads = [
-    ['Markets', 'Who has to own Greece now', 'Developed-market status changes which funds can buy Greek shares, and how much they have to hold.'],
-    ['Economy', 'Can Greece keep outgrowing Europe?', 'What has driven five years of above-average growth, and what has to happen for it to last.'],
-    ['Investment', 'Where the foreign money is going', 'Energy, hotels, data centres and logistics: which sectors are drawing capital, and from where.'],
-    ['Infrastructure', 'The infrastructure decade', 'Metros, motorways, ports and the cables that will plug Greece into Europe’s grid.'],
-    ['Energy', 'From energy importer to regional hub', 'Sun, wind and interconnectors: why Greece sits at the centre of Europe’s new energy map.'],
-    ['Tourism', 'Tourism grows up', 'A longer season and a shift from counting arrivals to the value each visitor leaves.'],
-    ['Shipping', 'The world’s biggest fleet', 'Greek owners control more of the world’s shipping than any other nation. What that means at home.'],
-    ['Tech', 'Greece’s tech scene comes of age', 'From the first big exits to the cloud regions being built near Athens.'],
-    ['Talent', 'The generation that left, and the ones coming back', 'Hundreds of thousands left during the crisis. Who is returning, and what brings them home.'],
-    ['Health', 'Rebuilding Greek healthcare', 'Hospital upgrades, digital health records and what is still to fix.'],
-    ['Politics', 'The reforms behind the recovery', 'The laws and decisions that rebuilt trust, and the ones still waiting.'],
-    ['Cities', 'Athens, the next global capital?', 'Ellinikon, new arrivals and a city that is changing fast. The case, and what stands in the way.'],
-    ['Regions', 'Beyond Athens', 'Thessaloniki, Crete, Halkidiki and the regions where the next wave of investment is landing.']
-  ];
   const rail = document.getElementById('rail');
-  reads.forEach(([tag, title, text], i) => {
-    const a = document.createElement('a'); a.className = 'read'; a.href = '#reads';
-    a.innerHTML = '<span class="num"></span><span class="tag"></span><h3></h3><p></p><span class="meta"><span>Long read · 2,000+ words</span><span>Coming soon</span></span>';
+  if ((window.G40_PILLARS || []).length) rail.innerHTML = '';
+  (window.G40_PILLARS || []).forEach((pl, i) => {
+    const a = document.createElement('a'); a.className = 'read'; a.href = 'pillars/' + pl.slug + '.html';
+    a.innerHTML = '<span class="num"></span><span class="tag"></span><h3></h3><p></p><span class="meta"><span>Long read</span><span>Read →</span></span>';
     a.querySelector('.num').textContent = String(i + 1).padStart(2, '0');
-    a.querySelector('.tag').textContent = tag; a.querySelector('h3').textContent = title; a.querySelector('p').textContent = text;
+    a.querySelector('.tag').textContent = pl.category; a.querySelector('h3').textContent = pl.title; a.querySelector('p').textContent = pl.summary;
     rail.appendChild(a);
   });
   const step = () => rail.querySelector('.read').getBoundingClientRect().width + 18;
@@ -704,22 +716,8 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
   document.getElementById('railNext').onclick = () => rail.scrollBy({ left: step(), behavior: reduce ? 'auto' : 'smooth' });
 
   /* ---------- Daily feed: newest first, filter by bucket ---------- */
-  const CATS = ['Economy', 'Investment', 'Markets', 'Infrastructure', 'Energy', 'Tourism', 'Shipping', 'Tech', 'Politics', 'Talent', 'Health'];
-  const feed = [
-    { d: '22 Nov', cat: 'Politics', t: 'Labour ministry tables Greece’s first law on AI and algorithmic management at work', why: 'Rules for the AI-era labour market, in step with the EU platform-work directive.', src: 'Greek City Times', url: 'https://greekcitytimes.com/2026/11/22/ai-labour-bill/' },
-    { d: '22 Nov', cat: 'Talent', t: 'Thessaloniki’s universities expand degrees taught in foreign languages', why: 'Builds Greece’s pull for international students, and gives its own a reason to stay.', src: 'Greek City Times', url: 'https://greekcitytimes.com/2026/11/22/greek-universities-expand-foreign-language-degrees/' },
-    { d: '16 Nov', cat: 'Tech', t: 'National investment fund takes 23% stake in Data4 Greece to enter the data-centre market', why: 'State capital follows private money into digital infrastructure.', src: 'Protothema', url: 'https://en.protothema.gr/2026/11/16/national-investment-fund-takes-23-stake-in-data4-greece-to-enter-data-centre-market/' },
-    { d: '16 Nov', cat: 'Energy', t: 'Dodecanese islands to be connected to the mainland grid with a €228.9m EU grant', why: 'Another island group off diesel and onto the national grid.', src: 'European Commission (CINEA)', url: 'https://cinea.ec.europa.eu/news-events/news/greek-dodecanese-islands-will-be-connected-mainland-grid-thanks-eur2289-million-eu-grant-2026-11-16_en' },
-    { d: '16 Nov', cat: 'Economy', t: 'Morgan Stanley on Greece’s growth outlook', why: 'A global bank’s read on where the economy goes next.', src: 'Greek Reporter', url: 'https://greekreporter.com/2026/11/16/greece-economic-growth-morgan-stanley/' },
-    { d: '15 Nov', cat: 'Tourism', t: 'Greek tourism set for a fourth consecutive record year', why: 'Four records in a row, with the ministry pushing value over volume.', src: 'Greek City Times', url: 'https://greekcitytimes.com/2026/11/15/greek-tourism-set-for-fourth-consecutive-record-year/' },
-    { d: '13 Nov', cat: 'Tourism', t: 'Wyndham signs deal for 174 branded villas in Halkidiki', why: 'Global hotel brands are moving beyond Athens and the islands.', src: 'GTP', url: 'https://news.gtp.gr/2026/11/13/wyndham-signs-deal-for-174-branded-villas-in-halkidiki/' },
-    { d: '12 Nov', cat: 'Politics', t: 'Parliament votes on tax cuts and new benefits, including child investment accounts', why: 'Moves the tax burden away from families and regional business.', src: 'To Vima', url: 'https://www.tovima.com/politics/greece-parliament-to-vote-on-tax-cuts-and-new-benefits' },
-    { d: '9 Nov', cat: 'Tech', t: 'Greece commits €120m to the European Tech Champions Initiative', why: 'More late-stage growth capital within reach of Greek scale-ups.', src: 'Sofokleous10', url: 'https://sofokleous10.gr/2026/11/09/greece-commits-e120-million-to-european-drive-to-create-global-technology-champions/' },
-    { d: 'Nov', cat: 'Shipping', t: 'Greek shipowners lead the second-hand market with $6.6bn of investment', why: 'The world’s largest merchant fleet keeps buying.', src: 'Naftemporiki', url: 'https://www.naftemporiki.gr/english/2189775/greek-shipowners-lead-the-secondhand-market-with-6-6-billion-in-investments/' },
-    { d: 'Nov', cat: 'Markets', t: 'Athens Stock Exchange heads for a 20-year high in new listings', why: 'Companies are choosing Athens to raise money again.', src: 'Naftemporiki', url: 'https://www.naftemporiki.gr/english/2186857/athens-stock-exchange-poised-for-20-year-high-in-new-listings/' },
-    { d: 'Nov', cat: 'Investment', t: 'EY Attractiveness Survey: Greece 2026', why: 'What foreign investors say about Greece this year.', src: 'EY', url: 'https://www.ey.com/en_gr/foreign-direct-investment-surveys/ey-attractiveness-survey-greece-2026' },
-    { d: '5 Oct', cat: 'Politics', t: 'Draft 2027 budget sees debt falling to 128.8% of GDP', why: 'The debt path is the backbone of Greece’s investment grade.', src: 'Cyprus Mail', url: 'https://cyprus-mail.com/2026/10/05/greece-projects-faster-2027-growth-steeper-debt-ratio-decline' }
-  ];
+  const CATS = window.G40_FEED_CATS;
+  const feed = window.G40_FEED || [];
   const PAGE = 8;
   const chips = document.getElementById('chips'), list = document.getElementById('feedList'), more = document.getElementById('feedMore');
   let active = store.get('g2040-cat'); if (![ 'All', ...CATS ].includes(active)) active = 'All';
@@ -732,11 +730,11 @@ footer .row { display: flex; justify-content: space-between; gap: 20px; flex-wra
     if (!items.length) { const li = document.createElement('li'); li.className = 'empty'; li.style.display = 'block'; li.textContent = 'No ' + active.toLowerCase() + ' stories yet.'; list.appendChild(li); }
     items.slice(0, shown).forEach(f => {
       const li = document.createElement('li');
-      const t = document.createElement('time'); t.textContent = f.d;
+      const t = document.createElement('time'); t.textContent = window.G40_fmtDate(f.d); t.dateTime = f.d;
       const body = document.createElement('div');
       const a = document.createElement('a'); a.href = f.url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = f.t;
       const why = document.createElement('span'); why.className = 'why'; why.textContent = f.why;
-      const src = document.createElement('span'); src.className = 'src'; src.textContent = f.src;
+      const src = document.createElement('span'); src.className = 'src'; src.textContent = 'Source: ' + f.src;
       body.append(a, why, src);
       const cat = document.createElement('span'); cat.className = 'cat'; cat.textContent = f.cat;
       li.append(t, body, cat); list.appendChild(li);

@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Energy transition and the grid · Greece 2040</title>
+<meta name="description" content="Lignite fell from 54% of Greek electricity in 2010 to 4.7% in 2025 (Ember), wind and solar now make 40.6%, and Greece has become a net power exporter. Gas has filled much of the gap.">
+<meta property="og:title" content="Energy transition and the grid · Greece 2040">
+<meta property="og:description" content="Greece has almost left lignite behind: 4.7% of electricity in 2025, down from 54% in 2010 (Ember).">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#0C1722">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230D5EAF'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='900' font-size='30' text-anchor='middle' fill='%23fff'%3EGR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+  .legend i.dash { height: 0; width: 14px; border-top: 2px dashed var(--series-2); border-radius: 0; }
+  .status { font-weight: 650; color: var(--ink); }
+</style>
+<!-- Hub metadata: read by the resource hub. Keep it valid JSON. -->
+<script type="application/json" id="g40-meta">
+{
+  "slug": "energy",
+  "title": "Greece is almost out of lignite, and now exports electricity",
+  "category": "Energy",
+  "summary": "Lignite made 54% of Greek electricity in 2010 and 4.7% in 2025 (Ember). The largest lignite plant, Agios Dimitrios, closed on 15 May 2026, and the last unit is due to stop burning lignite by end-2026. Wind and solar made 40.6% of generation in 2025, against 30.2% in the EU, but gas rose to 40.3% and the renewables share slipped for a second year.",
+  "tags": ["energy", "lignite", "renewables", "solar", "electricity grid", "interconnectors", "lng", "electricity prices"],
+  "updated": "2026-11-23",
+  "sections": [
+    { "id": "lignite", "title": "Lignite went from more than half of Greek power to under 5% in 15 years", "number": "4.7%" },
+    { "id": "mix", "title": "Sun and wind replaced lignite, and gas filled the gaps", "number": "40.6%" },
+    { "id": "renewables-slip", "title": "Why the renewables share slipped two years running", "number": "47.7%" },
+    { "id": "exports", "title": "Greece now sells more electricity abroad than it buys", "number": "3.0 TWh" },
+    { "id": "interconnections", "title": "Cables to the islands, and bigger plans across the sea", "number": "1,000 MW" },
+    { "id": "gas", "title": "Greece has become a gas gateway for the Balkans and Ukraine", "number": "5.5 bcm" },
+    { "id": "investors", "title": "Who is paying for it: Masdar, PPC and the grid operator", "number": "€3.2bn" },
+    { "id": "prices", "title": "Is Greek electricity expensive?", "number": "€103.9/MWh" },
+    { "id": "watch", "title": "What to watch: storage, offshore wind and the 2030 plan", "number": "13.5 GW" }
+  ]
+}
+</script>
+<!--BUILD:seo--><link rel="canonical" href="https://greece2040.com/pillars/energy.html">
+<meta property="og:url" content="https://greece2040.com/pillars/energy.html">
+<meta property="og:site_name" content="Greece 2040">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Greece is almost out of lignite, and now exports electricity", "description": "Lignite made 54% of Greek electricity in 2010 and 4.7% in 2025 (Ember). The largest lignite plant, Agios Dimitrios, closed on 15 May 2026, and the last unit is due to stop burning lignite by end-2026. Wind and solar made 40.6% of generation in 2025, against 30.2% in the EU, but gas rose to 40.3% and the renewables share slipped for a second year.", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "inLanguage": "en", "about": "Energy", "keywords": "energy, lignite, renewables, solar, electricity grid, interconnectors, lng, electricity prices", "mainEntityOfPage": "https://greece2040.com/pillars/energy.html", "author": {"@type": "Organization", "name": "Greece 2040", "url": "https://greece2040.com/", "description": "An independent, non-profit platform about Greece's future."}, "publisher": {"@type": "Organization", "name": "Greece 2040", "url": "https://greece2040.com/", "description": "An independent, non-profit platform about Greece's future."}, "isPartOf": {"@type": "WebSite", "name": "Greece 2040", "url": "https://greece2040.com/"}}</script>
+<!--/BUILD:seo-->
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="../index.html" aria-label="Greece 2040 home">GREECE <b>2040</b></a>
+    <nav aria-label="Site">
+      <a href="../index.html#picture">The numbers</a>
+      <a href="../hub.html">Resource hub</a>
+      <a href="../index.html#feed">Daily feed</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap p-head">
+    <div class="tag">Energy</div>
+    <h1>Greece is almost out of lignite, and now exports electricity</h1>
+    <p class="answer">Lignite made 54% of Greek electricity in 2010 and 4.7% in 2025, according to Ember. The largest lignite plant, Agios Dimitrios, closed on 15 May 2026, and the last unit is due to stop burning lignite by end-2026. Wind and solar made 40.6% of generation in 2025, against 30.2% in the EU, but gas rose to 40.3% and the renewables share slipped for a second year.</p>
+    <div class="dates">Published 23 Nov 2026 · Data checked 23 Nov 2026</div>
+
+    <div class="stat-strip">
+      <a href="#lignite"><span class="n">4.7%</span><span class="l">of Greek electricity came from lignite in 2025, down from 54% in 2010</span><span class="go">The detail ↓</span></a>
+      <a href="#mix"><span class="n">40.6%</span><span class="l">of Greek electricity came from wind and solar in 2025 (EU: 30.2%)</span><span class="go">The detail ↓</span></a>
+      <a href="#exports"><span class="n">3.0 TWh</span><span class="l">net electricity exports in 2025, after decades as an importer</span><span class="go">The detail ↓</span></a>
+    </div>
+  </div>
+
+  <div class="wrap p-body">
+    <nav class="toc" aria-label="On this page">
+      <div class="eyebrow">On this page</div>
+      <ol>
+        <li><a href="#lignite">Out of lignite</a></li>
+        <li><a href="#mix">What replaced it</a></li>
+        <li><a href="#renewables-slip">The renewables slip</a></li>
+        <li><a href="#exports">A net exporter</a></li>
+        <li><a href="#interconnections">Islands and cables</a></li>
+        <li><a href="#gas">LNG and gas routes</a></li>
+        <li><a href="#investors">Masdar, PPC and the grid</a></li>
+        <li><a href="#prices">Prices against the EU</a></li>
+        <li><a href="#watch">What to watch</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <section id="lignite">
+        <h2>Lignite went from more than half of Greek power to under 5% in 15 years</h2>
+        <p class="lead">Lignite, a soft brown coal mined in western Macedonia, generated 4.7% of Greek electricity in 2025, down from 54% in 2010, according to the energy think tank Ember.<sup class="ref"><a href="#s1">1</a></sup></p>
+        <p>In absolute terms, lignite plants produced 2.7 TWh in 2025, against 30.8 TWh in 2010. For decades lignite was the backbone of the Greek grid, because it was the one fuel Greece had in quantity at home.</p>
+
+        <figure class="chart" id="chart-lignite">
+          <h3>Lignite's share of Greek electricity has fallen from 54% to under 5%</h3>
+          <p class="sub">Coal (lignite) share of electricity generation, % · 2010–2025</p>
+          <svg viewBox="0 0 720 280" role="img" aria-label="Bar chart of lignite's share of Greek electricity generation: 54.4% in 2010, 43.3% in 2015, 13.9% in 2020, 11.1% in 2022, 5.7% in 2024 and 4.7% in 2025."></svg>
+          <figcaption class="foot">Source: <a href="https://ember-energy.org/data/yearly-electricity-data/">Ember yearly electricity data</a> (downloaded 23 Nov 2026). Ember counts all coal; in Greece that is lignite.</figcaption>
+        </figure>
+
+        <h3>The last plants</h3>
+        <p>Agios Dimitrios near Kozani, the largest lignite plant in the country at almost 1.6 GW across five units, shut down on 15 May 2026, after 42 years in operation.<sup class="ref"><a href="#s2">2</a></sup> That left one lignite unit running: Ptolemaida 5, a 660 MW plant that is also the newest.</p>
+        <p>PPC, the majority-private, state-linked power company that owns the plants, says Ptolemaida 5 will stop burning lignite by the end of 2026 and be converted to gas.<sup class="ref"><a href="#s3">3</a></sup> The grid operator IPTO asked PPC to keep the unit available in reserve until March 2027, and PPC's chief executive Georgios Stassis said this meant postponing decommissioning for a few months, not keeping it running.<sup class="ref"><a href="#s2">2</a></sup></p>
+
+        <ul class="timeline">
+          <li><span class="when">2010</span>Lignite makes 54% of Greek electricity.<sup class="ref"><a href="#s1">1</a></sup></li>
+          <li><span class="when">Sep 2019</span>At the UN Climate Action Summit, Prime Minister Kyriakos Mitsotakis pledges to close all lignite plants by 2028.<sup class="ref"><a href="#s4">4</a></sup></li>
+          <li><span class="when">2022</span>The European energy crisis delays closures, and lignite's share rises briefly to 11.1%.<sup class="ref"><a href="#s5">5</a>,</sup><sup class="ref"><a href="#s1">1</a></sup></li>
+          <li><span class="when">2024</span>PPC sets 2026 as its coal exit date.<sup class="ref"><a href="#s6">6</a></sup></li>
+          <li><span class="when">2025</span>Lignite falls to 4.7% of generation.<sup class="ref"><a href="#s1">1</a></sup></li>
+          <li><span class="when">15 May 2026</span>Agios Dimitrios, the largest lignite plant, closes.<sup class="ref"><a href="#s2">2</a></sup></li>
+          <li><span class="when">End-2026 (planned)</span>Ptolemaida 5 stops burning lignite and is to be converted to gas, with reserve availability until March 2027.<sup class="ref"><a href="#s3">3</a>,</sup><sup class="ref"><a href="#s2">2</a></sup></li>
+        </ul>
+
+        <div class="caveat"><span class="k">What this number doesn't say</span><p>Lignite has not gone to zero yet: Ptolemaida 5 still produced power in 2026, and IPTO data show 2,058 GWh of lignite generation from January to September 2026.<sup class="ref"><a href="#s7">7</a></sup></p></div>
+      </section>
+
+      <section id="mix">
+        <h2>Sun and wind replaced lignite, and gas filled the gaps</h2>
+        <p class="lead">In 2025 wind and solar made 40.6% of Greek electricity, gas made 40.3% and hydro 5.9%, according to Ember.<sup class="ref"><a href="#s1">1</a></sup></p>
+        <p>The chart shows the swap. Lignite's fall after 2019 was matched first by gas, which jumped to 40.5% in 2020, and then by solar and wind, which overtook gas in 2023. Hydro moves with rainfall, so it swings from year to year and was low in 2024 and 2025.</p>
+
+        <figure class="chart" id="chart-mix">
+          <h3>Greek electricity mix: lignite out, wind, solar and gas in</h3>
+          <p class="sub">Share of electricity generation by source, % · 2010–2025</p>
+          <div class="legend"><span><i style="background:var(--accent)"></i>Wind and solar</span><span><i style="background:var(--series-3)"></i>Lignite</span><span><i style="background:var(--series-2)"></i>Gas</span><span><i class="dash"></i>Hydro</span></div>
+          <svg viewBox="0 0 720 300" role="img" aria-label="Line chart of Greek generation shares. Lignite fell from 54.4% in 2010 to 4.7% in 2025. Wind and solar rose from 5.1% to 40.6%. Gas went from 17.4% to 40.3%. Hydro went from 13.2% to 5.9%."></svg>
+          <figcaption class="foot">Source: <a href="https://ember-energy.org/data/yearly-electricity-data/">Ember yearly electricity data</a> (downloaded 23 Nov 2026).</figcaption>
+        </figure>
+
+        <h3>Solar capacity has more than tripled since 2020</h3>
+        <p>Installed solar capacity went from 3.2 GW in 2020 to 11.1 GW at the end of 2025, and wind from 4.1 GW to 5.7 GW, by Ember's count.<sup class="ref"><a href="#s1">1</a></sup> The grid operator IPTO said in October 2026 that renewable capacity, excluding large hydro, had passed 19 GW and should reach almost 20 GW by the end of 2026.<sup class="ref"><a href="#s8">8</a></sup></p>
+
+        <figure class="chart" id="chart-capacity">
+          <h3>Solar capacity has taken off since 2020</h3>
+          <p class="sub">Installed capacity, gigawatts (GW) · 2010–2025</p>
+          <div class="legend"><span><i style="background:var(--accent)"></i>Solar</span><span><i style="background:var(--series-3)"></i>Wind</span></div>
+          <svg viewBox="0 0 720 280" role="img" aria-label="Line chart of installed capacity in Greece. Solar rose from 0.2 GW in 2010 to 2.6 GW in 2015, 3.2 GW in 2020 and 11.1 GW in 2025. Wind rose from 1.3 GW in 2010 to 4.1 GW in 2020 and 5.7 GW in 2025."></svg>
+          <figcaption class="foot">Source: <a href="https://ember-energy.org/data/yearly-electricity-data/">Ember yearly electricity data</a> (downloaded 23 Nov 2026).</figcaption>
+        </figure>
+
+        <h3>Ahead of the EU on wind and solar</h3>
+        <p>Greece got 40.6% of its electricity from wind and solar in 2025, against 30.2% for the EU as a whole.<sup class="ref"><a href="#s1">1</a></sup> The two were level in 2010, at 5.1% and 5.5%, so the gap opened over the past decade.</p>
+
+        <figure class="chart" id="chart-ws-eu">
+          <h3>Wind and solar: Greece pulled ahead of the EU</h3>
+          <p class="sub">Wind and solar share of electricity generation, % · 2010–2025</p>
+          <div class="legend"><span><i style="background:var(--accent)"></i>Greece</span><span><i style="background:var(--series-2)"></i>EU</span></div>
+          <svg viewBox="0 0 720 280" role="img" aria-label="Line chart: Greece's wind and solar share rose from 5.1% in 2010 to 40.6% in 2025; the EU's rose from 5.5% to 30.2%."></svg>
+          <figcaption class="foot">Source: <a href="https://ember-energy.org/data/yearly-electricity-data/">Ember yearly electricity data</a> (downloaded 23 Nov 2026).</figcaption>
+        </figure>
+
+        <div class="callout"><span class="k">In plain terms</span><p>Each kilowatt-hour of Greek electricity came with 325 grams of CO<sub>2</sub> in 2025, less than half the 707 grams of 2010. That is still above the EU average of 211 grams, because gas and lignite remain in the mix and Greece has no nuclear power.<sup class="ref"><a href="#s1">1</a></sup></p></div>
+      </section>
+
+      <section id="renewables-slip">
+        <h2>Why the renewables share slipped two years running</h2>
+        <p class="lead">On Ember's generation basis, renewables fell from 49.8% of Greek electricity in 2023 to 49.2% in 2024 and 47.7% in 2025, while gas rose from 32.7% to 40.3%.<sup class="ref"><a href="#s1">1</a></sup></p>
+        <p>Three things drove it. Greece started exporting power, and the regulator linked the extra exports to higher gas-fired output.<sup class="ref"><a href="#s9">9</a></sup> Hydro output was low, at 6.3% and 5.9%. And wind and solar output stopped growing even as capacity kept rising: solar generation was 11.4 TWh in 2025, almost the same as in 2024, although installed solar capacity rose by about a quarter.<sup class="ref"><a href="#s1">1</a></sup></p>
+
+        <h3>Curtailment: clean power thrown away</h3>
+        <p>Curtailment is when the grid operator orders wind and solar farms to cut output, because the grid can't absorb or move the power at that moment. It happens most on sunny spring middays, when demand is low.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Period</th><th class="num">Curtailed</th><th class="num">Share of renewable output</th><th class="num">Hours at zero or negative price</th></tr></thead>
+            <tbody>
+              <tr><td>2024</td><td class="num">899 GWh</td><td class="num">–</td><td class="num">186</td></tr>
+              <tr><td>2025</td><td class="num">1,867 GWh</td><td class="num">6.6%</td><td class="num">483</td></tr>
+              <tr class="hl"><td>Jan–Sep 2026</td><td class="num">2,063 GWh</td><td class="num">7.8%</td><td class="num">1,055.5</td></tr>
+            </tbody>
+            <caption>Source: The Green Tank, from IPTO and HEDNO data; zero-price hours are day-ahead hours at or below €0.05/MWh, from ENTSO-E.</caption>
+          </table>
+        </div>
+        <p>Curtailment doubled in 2025 to 1,867 GWh, or 6.6% of renewable output, and by September 2026 it had already passed the full-year 2025 figure.<sup class="ref"><a href="#s10">10</a>,</sup><sup class="ref"><a href="#s7">7</a></sup> A team at Aristotle University of Thessaloniki forecast 3.3–3.7 TWh for the whole of 2026, about 12% of output.<sup class="ref"><a href="#s11">11</a></sup> Hours with wholesale prices at or near zero also rose, from 186 in 2024 to 1,055.5 in the first nine months of 2026, which squeezes the income of solar farms that sell at market prices.</p>
+
+        <h3>Batteries are only now arriving</h3>
+        <p>Storage is the main fix, and it is late. Three subsidised battery auctions run by the energy regulator RAAEY awarded about 900 MW between 2023 and 2025.<sup class="ref"><a href="#s12">12</a>,</sup><sup class="ref"><a href="#s13">13</a></sup> By the end of September 2026, IPTO counted 689 MW of batteries connected to the main grid, most of it in Thessaly.<sup class="ref"><a href="#s14">14</a></sup> In October Metlen and Karatzis switched on a 330 MW battery in Larissa, the largest in Greece.<sup class="ref"><a href="#s15">15</a></sup> Almost all of it was still in test operation, and the first units are expected to enter commercial operation in December 2026.<sup class="ref"><a href="#s16">16</a></sup></p>
+
+        <div class="caveat"><span class="k">Two measures, two answers</span><p>Eurostat, which tracks the EU's renewables target, puts Greece's renewable share of electricity at 51.2% in 2024 and a provisional 60.9% in 2025.<sup class="ref"><a href="#s17">17</a></sup> That figure measures consumption, not generation, and it smooths out good and bad years for hydro and wind, so it does not show the slip. Both are valid, but they answer different questions, so this page does not chart them together. Ember's figures above describe what Greek power plants actually produced.</p></div>
+      </section>
+
+      <section id="exports">
+        <h2>Greece now sells more electricity abroad than it buys</h2>
+        <p class="lead">Greece was a net exporter of electricity in 2024 and 2025, after at least 14 years of net imports, and net exports reached 3.0 TWh in 2025, according to Ember and IPTO.<sup class="ref"><a href="#s1">1</a>,</sup><sup class="ref"><a href="#s18">18</a></sup></p>
+        <p>Until 2023 Greece bought power from its neighbours every year, up to 9.9 TWh in 2019. In 2025 it exported 6.4 TWh and imported 3.4 TWh, and it was a net exporter in 11 of 12 months.<sup class="ref"><a href="#s18">18</a></sup> The pace then picked up: IPTO's bulletin shows net exports of 6.7 TWh from January to September 2026, already more than twice the 2025 total.<sup class="ref"><a href="#s14">14</a></sup></p>
+
+        <figure class="chart" id="chart-trade">
+          <h3>From importer to exporter</h3>
+          <p class="sub">Net electricity imports, terawatt-hours (TWh); below zero means net exports · 2010–2025</p>
+          <svg viewBox="0 0 720 280" role="img" aria-label="Bar chart of Greek net electricity imports: 5.7 TWh in 2010, 9.6 TWh in 2015, 9.9 TWh in 2019, 4.9 TWh in 2023, then net exports of 0.3 TWh in 2024 and 3.0 TWh in 2025."></svg>
+          <figcaption class="foot">Source: <a href="https://ember-energy.org/data/yearly-electricity-data/">Ember yearly electricity data</a> (downloaded 23 Nov 2026), matching IPTO physical flows for 2025.</figcaption>
+        </figure>
+
+        <p>The power goes mainly north and west. In the first nine months of 2026 Bulgaria was the largest net buyer, followed by North Macedonia and Italy, according to IPTO's commercial schedules.<sup class="ref"><a href="#s14">14</a></sup> The regulator RAAEY linked the 2025 export surge to an 8% rise in gas-fired generation.<sup class="ref"><a href="#s9">9</a></sup></p>
+
+        <div class="caveat"><span class="k">What this number doesn't say</span><p>Exports are good for the trade balance and for PPC and other generators, but part of what Greece sells is gas-fired power, which is one reason the domestic renewables share fell. Different bodies also count it differently: RAAEY put 2025 net exports at 2.7 TWh on a commercial basis, against IPTO's 3.0 TWh of physical flows.<sup class="ref"><a href="#s9">9</a>,</sup><sup class="ref"><a href="#s18">18</a></sup></p></div>
+      </section>
+
+      <section id="interconnections">
+        <h2>Cables to the islands, and bigger plans across the sea</h2>
+        <p class="lead">Greece is wiring its islands to the mainland grid, and Crete has been fully connected since the 1,000 MW Crete–Attica cable entered commercial operation in December 2025.<sup class="ref"><a href="#s19">19</a></sup></p>
+        <p>Many Greek islands still run, or ran until recently, on local oil-fired power stations, which are expensive and polluting. The cost is spread across all Greek consumers through a public-service charge on bills, so every island connection lowers a cost that the mainland pays too. IPTO credits the Crete–Attica link with stopping Crete's oil-fired units, saving about 1.5 million tonnes of CO<sub>2</sub> a year.<sup class="ref"><a href="#s20">20</a></sup> The same cables help <a href="tourism.html#visitors">island tourism</a>, whose summer peaks set the islands' demand.</p>
+
+        <h3>Island links</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Project</th><th>Size and cost</th><th>Status, Nov 2026</th></tr></thead>
+            <tbody>
+              <tr><td>Crete–Peloponnese</td><td>150 kV AC, 2×200 MVA, 174 km; about €336m</td><td><span class="status">In operation</span> since 2021<sup class="ref"><a href="#s21">21</a></sup></td></tr>
+              <tr class="hl"><td>Crete–Attica (Ariadne)</td><td>1,000 MW, 500 kV HVDC (high-voltage direct current), 335 km of subsea cable; about €1.1bn</td><td><span class="status">In operation</span>, commercial since 17 Dec 2025<sup class="ref"><a href="#s20">20</a>,</sup><sup class="ref"><a href="#s19">19</a>,</sup><sup class="ref"><a href="#s22">22</a></sup></td></tr>
+              <tr><td>Cyclades, phases A–C</td><td>Syros, Paros, Mykonos, Naxos and upgraded links via Andros and Tinos</td><td><span class="status">In operation</span>, connected in stages from 2018<sup class="ref"><a href="#s23">23</a></sup></td></tr>
+              <tr><td>Cyclades, phase D</td><td>Santorini, Folegandros, Milos, Serifos</td><td><span class="status">Built; switching on</span>. Construction finished in July 2026; Folegandros was energised in October, with the others to follow<sup class="ref"><a href="#s23">23</a>,</sup><sup class="ref"><a href="#s24">24</a></sup></td></tr>
+              <tr><td>Dodecanese, phase 1</td><td>1,000 MW, 320 kV HVDC from Corinth to Kos; €2.54bn phase budget; Rhodes and Karpathos to follow in phase 2</td><td><span class="status">Contracted</span>. Cable contract signed 9 Nov 2026; €228.9m EU grant awarded 16 Nov 2026<sup class="ref"><a href="#s25">25</a>,</sup><sup class="ref"><a href="#s26">26</a></sup></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The Dodecanese grant came from the EU's Public Sector Loan Facility, part of its Just Transition Mechanism, and the European Commission called it the largest grant from that facility to a single project so far. The European Investment Bank is lending to the project as well.<sup class="ref"><a href="#s26">26</a></sup> The grant is in our <a href="../index.html#feed">daily feed</a> as <a href="https://cinea.ec.europa.eu/news-events/news/greek-dodecanese-islands-will-be-connected-mainland-grid-thanks-eur2289-million-eu-grant-2026-11-16_en">"Dodecanese islands to be connected to the mainland grid with a €228.9m EU grant"</a>.</p>
+
+        <h3>Links abroad, each at its real stage</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Project</th><th>Size</th><th>Status, Nov 2026</th></tr></thead>
+            <tbody>
+              <tr><td>Greece–Bulgaria, second line</td><td>400 kV, 151 km</td><td><span class="status">In operation</span> since June 2023<sup class="ref"><a href="#s27">27</a></sup></td></tr>
+              <tr><td>GRITA, Greece–Italy</td><td>500 MW</td><td><span class="status">In operation</span> since 2002; GRITA 2 (up to 1,000 MW) planned for 2033<sup class="ref"><a href="#s28">28</a></sup></td></tr>
+              <tr><td>Great Sea Interconnector, Crete–Cyprus</td><td>1,000 MW, about 900 km; €657m EU grant</td><td><span class="status">Delayed</span>. Seabed surveys resumed in Nov 2026; IPTO's draft plan targets end-2031<sup class="ref"><a href="#s29">29</a>,</sup><sup class="ref"><a href="#s30">30</a>,</sup><sup class="ref"><a href="#s31">31</a></sup></td></tr>
+              <tr><td>GREGY, Egypt–Greece</td><td>3,000 MW, about 954 km</td><td><span class="status">Pre-construction</span>. Seabed studies, part-funded by a €9.56m EU grant in Jan 2026<sup class="ref"><a href="#s32">32</a>,</sup><sup class="ref"><a href="#s33">33</a></sup></td></tr>
+              <tr><td>Saudi Arabia–Greece</td><td>Over 2,000 km, over €5bn (press estimate)</td><td><span class="status">Political commitment</span>. A joint IPTO–National Grid SA company is studying feasibility; leaders pledged in Oct 2026 to speed it up<sup class="ref"><a href="#s34">34</a>,</sup><sup class="ref"><a href="#s35">35</a>,</sup><sup class="ref"><a href="#s36">36</a></sup></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The Great Sea Interconnector, which would link Cyprus to the European grid for the first time, is the most exposed. Turkish naval activity disrupted seabed surveys in 2024 and 2025, and in October 2026 the head of Cyprus's energy regulator said the €1.9bn cost estimate "does not seem realistic".<sup class="ref"><a href="#s37">37</a>,</sup><sup class="ref"><a href="#s38">38</a></sup> The infrastructure fund Meridiam has taken a majority stake alongside IPTO.<sup class="ref"><a href="#s29">29</a></sup> For the wider set of big projects, see <a href="infrastructure.html">Infrastructure</a>.</p>
+      </section>
+
+      <section id="gas">
+        <h2>Greece has become a gas gateway for the Balkans and Ukraine</h2>
+        <p class="lead">Greece now has two LNG terminals, Revithoussa near Athens and a 5.5 bcm-a-year floating terminal off Alexandroupolis, and it re-exports a growing share of the gas they bring in to its northern neighbours.<sup class="ref"><a href="#s39">39</a></sup></p>
+        <p>LNG is liquefied natural gas, shipped by tanker and turned back into gas at a terminal. Gas generated 40.3% of Greek electricity in 2025, so it matters for power as much as for heating and industry.<sup class="ref"><a href="#s1">1</a></sup> In 2025, 86.1% of the LNG landed at Revithoussa came from the United States.<sup class="ref"><a href="#s40">40</a></sup></p>
+        <ul>
+          <li><strong>Revithoussa</strong> (operator DESFA): 225,000 m³ of storage, with its 2025 slots fully booked.<sup class="ref"><a href="#s41">41</a></sup></li>
+          <li><strong>Alexandroupolis FSRU</strong> (operator Gastrade): a floating storage and regasification unit that started commercial operation in October 2024. It went offline in January 2025 after a technical problem, resumed in August 2025, and was shut again for maintenance from April to June 2026.<sup class="ref"><a href="#s39">39</a>,</sup><sup class="ref"><a href="#s42">42</a>,</sup><sup class="ref"><a href="#s43">43</a></sup></li>
+          <li><strong>The IGB pipeline</strong> to Bulgaria, in operation since October 2022, carries 3 bcm a year and can be expanded to 5 bcm.<sup class="ref"><a href="#s44">44</a></sup></li>
+        </ul>
+
+        <h3>The Vertical Corridor</h3>
+        <p>The Vertical Corridor is a set of joint pipeline capacity products that let gas landed in Greece travel north through Bulgaria and Romania to Moldova and Ukraine. Early 2026 auctions drew little interest, so operators cut tariffs, and in July 2026 about 46% of annual capacity at the Greek–Bulgarian border point was booked for up to five years.<sup class="ref"><a href="#s45">45</a>,</sup><sup class="ref"><a href="#s46">46</a></sup> North Macedonia and Serbia joined the initiative in September 2026.<sup class="ref"><a href="#s47">47</a></sup></p>
+        <p>Greek gas exports nearly tripled in the first half of 2026, to 8.72 TWh from 2.86 TWh a year earlier, according to DESFA data reported by To Vima.<sup class="ref"><a href="#s48">48</a></sup> The Greek state gas company DEPA signed its first deal to supply US LNG to Ukraine's Naftogaz in November 2025, and Atlantic-See, a joint venture of Aktor and DEPA, has a 20-year contract with the US exporter Venture Global for 1 million tonnes a year from 2030.<sup class="ref"><a href="#s49">49</a>,</sup><sup class="ref"><a href="#s50">50</a></sup></p>
+
+        <div class="caveat"><span class="k">What this number doesn't say</span><p>The gateway role depends on politics and prices. The EU's ban on Russian gas, which applies in stages from March 2026 to late 2027, creates demand for other supply in the region, but several 2026 auctions failed when gas was expensive.<sup class="ref"><a href="#s51">51</a>,</sup><sup class="ref"><a href="#s45">45</a></sup> We could not find a confirmed figure for how much gas actually reached Ukraine through Greece.</p></div>
+      </section>
+
+      <section id="investors">
+        <h2>Who is paying for it: Masdar, PPC and the grid operator</h2>
+        <p class="lead">Two deals show where the money comes from: Masdar's purchase of Terna Energy at a €3.2bn enterprise value, completed in 2025, and PPC's sale of €4.25bn of new shares in May 2026.<sup class="ref"><a href="#s52">52</a>,</sup><sup class="ref"><a href="#s53">53</a>,</sup><sup class="ref"><a href="#s54">54</a></sup></p>
+
+        <h3>Masdar and Terna Energy</h3>
+        <p>Masdar, the Abu Dhabi state-backed renewables company, agreed in June 2024 to buy Terna Energy at €20 a share, a €3.2bn enterprise value (the price of the equity plus its debt).<sup class="ref"><a href="#s52">52</a></sup> It took control of 70% in November 2024 and reached 100% through a tender offer and squeeze-out in April 2025, when Terna Energy had 1,224 MW in operation.<sup class="ref"><a href="#s53">53</a></sup> It targets 6 GW by 2030.<sup class="ref"><a href="#s55">55</a></sup></p>
+        <p>Its projects include the Amfilochia pumped-storage plant in western Greece (680 MW), which the EIB valued at about €685m.<sup class="ref"><a href="#s56">56</a>,</sup><sup class="ref"><a href="#s57">57</a></sup> In October 2026 Masdar agreed to buy the Enipeas solar plant in Thessaly, of more than 550 MWp, from Lightsource bp, with completion expected by the end of 2026.<sup class="ref"><a href="#s58">58</a></sup> The deal is part of a wider wave of <a href="investment.html#fdi-record">foreign direct investment</a> into Greece.</p>
+
+        <h3>PPC: from lignite utility to listed renewables group</h3>
+        <p>PPC was a state-controlled, lignite-heavy utility until 2021. A €1.35bn share sale at €9 a share in 2021 cut the state's stake from 51% to about 34%, and a second raise in May 2026, at €18.63 a share, brought in €4.25bn of new shares and €250m from treasury shares, with the Qatar Investment Authority as an anchor investor.<sup class="ref"><a href="#s59">59</a>,</sup><sup class="ref"><a href="#s60">60</a>,</sup><sup class="ref"><a href="#s54">54</a>,</sup><sup class="ref"><a href="#s61">61</a></sup> The state holds 33.4% after it.<sup class="ref"><a href="#s62">62</a></sup> Both raises were sold on the <a href="stock-market.html#athex">Athens exchange</a>, where PPC is listed.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>PPC, 2025</th><th class="num">Value</th></tr></thead>
+            <tbody>
+              <tr><td>Revenue</td><td class="num">€9.7bn</td></tr>
+              <tr><td>Adjusted EBITDA (operating profit before depreciation)</td><td class="num">€2.0bn</td></tr>
+              <tr><td>Renewable capacity, share of its total</td><td class="num">7.2 GW, 58%</td></tr>
+              <tr><td>Lignite, share of its own generation</td><td class="num">13%</td></tr>
+              <tr><td>Customers in Greece and Romania</td><td class="num">8.6m</td></tr>
+              <tr><td>Share of the Greek retail market</td><td class="num">50%</td></tr>
+            </tbody>
+            <caption>Source: PPC, 2025 financial results, 19 Mar 2026.<sup class="ref"><a href="#s63">63</a></sup></caption>
+          </table>
+        </div>
+        <p>PPC bought Enel's Romanian business in 2023 and plans more than €24bn of investment to 2030, including a first 300 MW data-centre site in Kozani, in the old lignite region.<sup class="ref"><a href="#s64">64</a>,</sup><sup class="ref"><a href="#s65">65</a></sup> Data centres are also a theme in <a href="tech.html">Greek tech</a>.</p>
+
+        <h3>The grid operator</h3>
+        <p>IPTO's draft ten-year plan for 2027–2036 foresees about €9bn of grid investment, about 80% of it by 2030, for island links, cross-border cables and connecting more than 10 GW of new renewables.<sup class="ref"><a href="#s66">66</a></sup></p>
+      </section>
+
+      <section id="prices">
+        <h2>Is Greek electricity expensive?</h2>
+        <p class="lead">Greek wholesale power has cost more than the EU average every year since 2015, but the gap is narrowing, and Greek households pay less per kilowatt-hour than the EU average in euros, though not once incomes are taken into account.<sup class="ref"><a href="#s67">67</a>,</sup><sup class="ref"><a href="#s68">68</a></sup></p>
+
+        <figure class="chart" id="chart-wholesale">
+          <h3>Greek wholesale power has stayed above the EU average</h3>
+          <p class="sub">Average day-ahead wholesale price, euros per megawatt-hour (€/MWh) · 2015–2025</p>
+          <div class="legend"><span><i style="background:var(--accent)"></i>Greece</span><span><i style="background:var(--series-2)"></i>EU average (22 countries)</span></div>
+          <svg viewBox="0 0 720 280" role="img" aria-label="Line chart of yearly wholesale prices. Greece: €51.9/MWh in 2015, €63.8 in 2019, €279.4 in 2022, €103.9 in 2025. Average of 22 EU countries: €38.0 in 2015, €45.1 in 2019, €228.6 in 2022, €86.7 in 2025."></svg>
+          <figcaption class="foot">Source: <a href="https://ember-energy.org/data/european-wholesale-electricity-price-data/">Ember European wholesale electricity price data</a> (downloaded 23 Nov 2026). Our calculation: simple yearly average of monthly prices; EU average is the unweighted mean of the 22 EU countries with data for every month of 2015–2025.</figcaption>
+        </figure>
+
+        <p>In 2025 the Greek day-ahead price averaged €103.9/MWh, against €86.7/MWh for the 22 EU countries in Ember's data, which made Greece the sixth most expensive of the 22. Between 2015 and 2023 it was first or second every year.<sup class="ref"><a href="#s67">67</a></sup> Gas plants set the Greek price whenever renewables can't cover demand, so Greek prices follow gas.<sup class="ref"><a href="#s69">69</a></sup></p>
+        <p>Prices rose again in autumn 2026 across Europe, with gas. The Greek monthly average reached €197.2/MWh in October 2026, against €169.5/MWh in Germany, and one October day-ahead auction cleared at €247.82/MWh, the highest since 2023.<sup class="ref"><a href="#s67">67</a>,</sup><sup class="ref"><a href="#s70">70</a></sup> The European Commission names the 2026 energy-price shock as one reason it expects Greek <a href="growth.html#growth">growth</a> to slow.<sup class="ref"><a href="#s71">71</a></sup></p>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Price per kWh, first half of 2026</th><th class="num">Greece</th><th class="num">EU</th></tr></thead>
+            <tbody>
+              <tr><td>Households, in euros (all taxes)</td><td class="num">24.0c</td><td class="num">28.3c</td></tr>
+              <tr class="hl"><td>Households, in purchasing power standards</td><td class="num">29.0</td><td class="num">28.4</td></tr>
+              <tr><td>Medium-sized businesses, in euros (excluding VAT)</td><td class="num">16.0c</td><td class="num">15.6c</td></tr>
+            </tbody>
+            <caption>Source: Eurostat nrg_pc_204 (households, 2,500–4,999 kWh a year) and nrg_pc_205 (non-households, 2,000–19,999 MWh a year).</caption>
+          </table>
+        </div>
+        <p>Purchasing power standards adjust for the fact that Greek incomes and prices are lower than the EU average. On that basis a Greek household's electricity costs slightly more than the EU average, and businesses pay slightly more even in plain euros.<sup class="ref"><a href="#s68">68</a>,</sup><sup class="ref"><a href="#s72">72</a></sup></p>
+
+        <div class="caveat"><span class="k">What this number doesn't say</span><p>Wholesale prices are only part of the bill, which also includes network charges, levies and taxes, and governments subsidised bills heavily during the 2022 crisis. The EU average here is a simple mean of countries, not weighted by consumption.</p></div>
+      </section>
+
+      <section id="watch">
+        <h2>What to watch: storage, offshore wind and the 2030 plan</h2>
+        <p class="lead">Greece's National Energy and Climate Plan sets 2030 targets of 13.5 GW of solar, 8.9 GW of onshore wind, 1.9 GW of offshore wind and about 6.25 GW of storage, and solar is the only one close to its target.<sup class="ref"><a href="#s73">73</a>,</sup><sup class="ref"><a href="#s74">74</a>,</sup><sup class="ref"><a href="#s75">75</a></sup></p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th class="num">2030 target</th><th>Latest</th></tr></thead>
+            <tbody>
+              <tr><td>Solar</td><td class="num">13.5 GW</td><td>11.1 GW at end-2025<sup class="ref"><a href="#s1">1</a></sup></td></tr>
+              <tr><td>Onshore wind</td><td class="num">8.9 GW</td><td>5.7 GW at end-2025; WindEurope expects about 7.65 GW by 2030<sup class="ref"><a href="#s1">1</a>,</sup><sup class="ref"><a href="#s76">76</a></sup></td></tr>
+              <tr><td>Offshore wind</td><td class="num">1.9 GW</td><td>None built; first tender not before 2029–2030<sup class="ref"><a href="#s77">77</a></sup></td></tr>
+              <tr><td>Batteries</td><td class="num">4.3 GW</td><td>689 MW connected, Sep 2026, mostly in testing<sup class="ref"><a href="#s14">14</a></sup></td></tr>
+              <tr><td>Pumped hydro storage</td><td class="num">1.9 GW</td><td>Amfilochia (680 MW) under construction<sup class="ref"><a href="#s57">57</a></sup></td></tr>
+              <tr><td>Lignite power</td><td class="num">Out by 2028</td><td>Last unit due to stop by end-2026<sup class="ref"><a href="#s3">3</a></sup></td></tr>
+            </tbody>
+            <caption>Targets: final updated NECP (Jan 2025), as summarised by Balkan Green Energy News and Greek News Agenda.</caption>
+          </table>
+        </div>
+        <ul>
+          <li><strong>Storage.</strong> The first batteries should start commercial operation in December 2026.<sup class="ref"><a href="#s16">16</a></sup> The ministry has opened grid connections for 4.7 GW of unsubsidised "merchant" batteries, but the connection rules changed in November 2026, which leaves investors uncertain.<sup class="ref"><a href="#s78">78</a></sup> The speed of this build-out will decide whether curtailment keeps rising.</li>
+          <li><strong>Offshore wind.</strong> In July 2026 the government reserved 2.35 GW of grid capacity for the first offshore zones, from Thrace to south of Rhodes.<sup class="ref"><a href="#s79">79</a></sup> A court ruling in July 2026 put the two pilot projects off Thrace in doubt, and WindEurope expects no offshore project to progress by 2030.<sup class="ref"><a href="#s80">80</a>,</sup><sup class="ref"><a href="#s76">76</a></sup></li>
+          <li><strong>The cables.</strong> The rest of the Cyclades switching on, survey progress on the Great Sea Interconnector, and the start of seabed work for the Dodecanese line.<sup class="ref"><a href="#s24">24</a>,</sup><sup class="ref"><a href="#s31">31</a>,</sup><sup class="ref"><a href="#s25">25</a></sup></li>
+          <li><strong>Prices this winter.</strong> Whether high gas prices feed into household bills, and whether more batteries and exports change how often gas sets the price.</li>
+        </ul>
+
+        <div class="callout"><span class="k">The takeaway</span><p>Greece has done the hard, visible part of the transition, closing lignite and building solar fast, and has turned from a power importer into an exporter. The next stage is less visible and slower: storage, grid and cables, which decide whether all that solar can be used rather than switched off.</p></div>
+      </section>
+
+      <section class="sources" id="sources">
+        <h2>Sources</h2>
+        <ol>
+          <li id="s1">Ember, Yearly electricity data (Greece and EU rows; generation, shares, capacity, emissions intensity, net imports), <a href="https://ember-energy.org/data/yearly-electricity-data/">https://ember-energy.org/data/yearly-electricity-data/</a>, file release_generation_yearly_global.csv downloaded 23 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s2">Balkan Green Energy News, "Ag. Dimitrios shutdown today leaves Greece with last coal plant", <a href="https://balkangreenenergynews.com/ag-dimitrios-shutdown-today-leaves-greece-with-last-coal-plant/">https://balkangreenenergynews.com/ag-dimitrios-shutdown-today-leaves-greece-with-last-coal-plant/</a>, 15 May 2026. Accessed 23 Nov 2026.</li>
+          <li id="s3">To Vima, "PPC CEO: end of lignite power generation by end of 2026", <a href="https://www.tovima.com/finance/ppc-ceo-end-of-lignite-power-generation-by-end-of-2026/amp/">https://www.tovima.com/finance/ppc-ceo-end-of-lignite-power-generation-by-end-of-2026/amp/</a>, 2026. Accessed 23 Nov 2026.</li>
+          <li id="s4">ClientEarth, "Greece announces lignite phase-out by 2028", <a href="https://www.clientearth.org/latest/press-office/press-releases/greece-announces-lignite-phase-out-by-2028-clientearth-reaction/">https://www.clientearth.org/latest/press-office/press-releases/greece-announces-lignite-phase-out-by-2028-clientearth-reaction/</a>, 24 Sep 2019. Accessed 23 Nov 2026.</li>
+          <li id="s5">Balkan Green Energy News, "Greece delays closure of three coal plant units to 2025", <a href="https://balkangreenenergynews.com/greece-delays-closure-of-three-coal-plant-units-to-2025/">https://balkangreenenergynews.com/greece-delays-closure-of-three-coal-plant-units-to-2025/</a>, 2022. Accessed 23 Nov 2026.</li>
+          <li id="s6">Balkan Green Energy News, "PPC pushes its coal exit target date forward to 2026", <a href="https://balkangreenenergynews.com/ppc-pushes-its-coal-exit-target-date-forward-to-2026">https://balkangreenenergynews.com/ppc-pushes-its-coal-exit-target-date-forward-to-2026</a>, 2024. Accessed 23 Nov 2026.</li>
+          <li id="s7">The Green Tank, "Trends in electricity production – September 2026" (analysis of IPTO data), <a href="https://thegreentank.gr/en/2026/11/02/admie-sep26-en/">https://thegreentank.gr/en/2026/11/02/admie-sep26-en/</a>, 2 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s8">Balkan Green Energy News, "Greece nearing 20 GW of renewables", <a href="https://balkangreenenergynews.com/greece-nearing-20-gw-of-renewables/">https://balkangreenenergynews.com/greece-nearing-20-gw-of-renewables/</a>, 23 Oct 2026, updated 3 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s9">energypress, "Greece consolidates position as net electricity exporter in 2025" (RAAEY data), <a href="https://energypress.eu/greece-consolidates-position-as-net-electricity-exporter-in-2025/">https://energypress.eu/greece-consolidates-position-as-net-electricity-exporter-in-2025/</a>, 2 Jan 2026. Accessed 23 Nov 2026.</li>
+          <li id="s10">The Green Tank, "Trends in electricity production – December 2025" (analysis of IPTO and HEDNO data), <a href="https://thegreentank.gr/en/2026/02/02/admie-dec25-en/">https://thegreentank.gr/en/2026/02/02/admie-dec25-en/</a>, 2 Feb 2026. Accessed 23 Nov 2026.</li>
+          <li id="s11">pv magazine, "Greek PV producers fret 3.5 TWh of curtailments in 2026", <a href="https://www.pv-magazine.com/2026/03/04/greek-pv-producers-fret-3-5-twh-of-curtailments-in-2026/">https://www.pv-magazine.com/2026/03/04/greek-pv-producers-fret-3-5-twh-of-curtailments-in-2026/</a>, 4 Mar 2026. Accessed 23 Nov 2026.</li>
+          <li id="s12">pv magazine, "Greece awards 300 MW in storage tender", <a href="https://www.pv-magazine.com/2024/02/19/greece-awards-300-mw-in-storage-tender/">https://www.pv-magazine.com/2024/02/19/greece-awards-300-mw-in-storage-tender/</a>, 19 Feb 2024. Accessed 23 Nov 2026.</li>
+          <li id="s13">ESS News, "Greece awards 189 MW of battery storage in third auction", <a href="https://www.ess-news.com/2025/03/24/greece-awards-189-mw-of-battery-storage-in-third-auction/">https://www.ess-news.com/2025/03/24/greece-awards-189-mw-of-battery-storage-in-third-auction/</a>, 24 Mar 2025. Accessed 23 Nov 2026.</li>
+          <li id="s14">IPTO (ADMIE), Monthly energy report, September 2026, v1, <a href="https://www.admie.gr/sites/default/files/attached-files/type-file/2026/10/Energy_Report_202609_v1_en.pdf">https://www.admie.gr/sites/default/files/attached-files/type-file/2026/10/Energy_Report_202609_v1_en.pdf</a>, Oct 2026. Accessed 23 Nov 2026.</li>
+          <li id="s15">energypress, "Metlen launches Greece's largest standalone battery", <a href="https://energypress.eu/metlen-launches-greeces-largest-standalone-battery/">https://energypress.eu/metlen-launches-greeces-largest-standalone-battery/</a>, 15 Oct 2026. Accessed 23 Nov 2026.</li>
+          <li id="s16">energypress, "First battery storage projects set for December commercial launch", <a href="https://energypress.eu/first-battery-storage-projects-set-for-december-commercial-launch/">https://energypress.eu/first-battery-storage-projects-set-for-december-commercial-launch/</a>, 9 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s17">Eurostat, Share of energy from renewable sources (nrg_ind_ren), electricity (RES-E), <a href="https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_ren/default/table">https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_ren/default/table</a>, updated 15 Sep 2026. Accessed 23 Nov 2026.</li>
+          <li id="s18">IPTO (ADMIE), Monthly energy report, December 2025, v2, <a href="https://www.admie.gr/sites/default/files/attached-files/type-file/2026/02/Energy_Report_202512_v2_en.pdf">https://www.admie.gr/sites/default/files/attached-files/type-file/2026/02/Energy_Report_202512_v2_en.pdf</a>, Feb 2026. Accessed 23 Nov 2026.</li>
+          <li id="s19">Naftemporiki, "ADMIE: full coverage of Crete's demand from the new link with Attica" (in Greek), <a href="https://www.naftemporiki.gr/finance/economy/2074088/admie-pliris-kalypsi-tis-zitisis-tis-kritis-apo-ti-nea-diasyndesi-me-attiki/">https://www.naftemporiki.gr/finance/economy/2074088/admie-pliris-kalypsi-tis-zitisis-tis-kritis-apo-ti-nea-diasyndesi-me-attiki/</a>, 17 Feb 2026. Accessed 23 Nov 2026.</li>
+          <li id="s20">IPTO, "Strategic project of the year 2025: the Crete–Attica electrical interconnection" (press release, in Greek), <a href="https://www.admie.gr/kentro-typoy/deltia-typoy/stratigiko-ergo-tis-hronias-2025-anadeihthike-i-ilektriki-diasyndesi">https://www.admie.gr/kentro-typoy/deltia-typoy/stratigiko-ergo-tis-hronias-2025-anadeihthike-i-ilektriki-diasyndesi</a>, 30 Sep 2026. Accessed 23 Nov 2026.</li>
+          <li id="s21">IPTO, Crete–Peloponnese interconnection (project page), <a href="https://www.admie.gr/en/erga/erga-diasyndeseis/diasyndesi-tis-kritis-me-tin-peloponniso-0">https://www.admie.gr/en/erga/erga-diasyndeseis/diasyndesi-tis-kritis-me-tin-peloponniso-0</a>. Accessed 23 Nov 2026.</li>
+          <li id="s22">To Vima, "Crete–Attica power link enters continuous operation", <a href="https://www.tovima.com/climate/crete-attica-power-link-enters-continuous-operation/">https://www.tovima.com/climate/crete-attica-power-link-enters-continuous-operation/</a>, Aug 2025. Accessed 23 Nov 2026.</li>
+          <li id="s23">Balkan Green Energy News, "Cyclades islands including Santorini get direct power link to mainland Greece", <a href="https://balkangreenenergynews.com/cyclades-islands-including-santorini-get-direct-power-link-to-mainland-greece/">https://balkangreenenergynews.com/cyclades-islands-including-santorini-get-direct-power-link-to-mainland-greece/</a>, 11 Jul 2026, updated 16 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s24">IPTO, "Folegandros joins the mainland high-voltage system" (press release, in Greek), <a href="https://www.admie.gr/kentro-typoy/deltia-typoy/admie-sto-ipeirotiko-systima-ypsilis-tasis-i-folegandros">https://www.admie.gr/kentro-typoy/deltia-typoy/admie-sto-ipeirotiko-systima-ypsilis-tasis-i-folegandros</a>, 19 Oct 2026. Accessed 23 Nov 2026.</li>
+          <li id="s25">IPTO, "Work starts on the Corinth–Kos interconnection" (press release, in Greek), <a href="https://www.admie.gr/kentro-typoy/deltia-typoy/xekina-ergo-tis-diasyndesis-korinthoy-ko">https://www.admie.gr/kentro-typoy/deltia-typoy/xekina-ergo-tis-diasyndesis-korinthoy-ko</a>, 9 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s26">European Commission (CINEA), "Greek Dodecanese islands will be connected to the mainland grid thanks to €228.9 million EU grant", <a href="https://cinea.ec.europa.eu/news-events/news/greek-dodecanese-islands-will-be-connected-mainland-grid-thanks-eur2289-million-eu-grant-2026-11-16_en">https://cinea.ec.europa.eu/news-events/news/greek-dodecanese-islands-will-be-connected-mainland-grid-thanks-eur2289-million-eu-grant-2026-11-16_en</a>, 16 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s27">IPTO, "New Greece–Bulgaria electrical interconnection has been completed", <a href="https://www.admie.gr/en/nea/deltia-typoy/new-greece-bulgaria-electrical-interconnection-has-been-completed">https://www.admie.gr/en/nea/deltia-typoy/new-greece-bulgaria-electrical-interconnection-has-been-completed</a>, 3 Jul 2023. Accessed 23 Nov 2026.</li>
+          <li id="s28">IPTO, GRITA 2 Greece–Italy interconnection (project page), <a href="https://www.admie.gr/en/erga/erga-diasyndeseis/GRITA2">https://www.admie.gr/en/erga/erga-diasyndeseis/GRITA2</a>. Accessed 23 Nov 2026.</li>
+          <li id="s29">Great Sea Interconnector, project website, <a href="https://www.great-sea-interconnector.com/">https://www.great-sea-interconnector.com/</a>, accessed 23 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s30">IPTO, "Great Sea Interconnector: seabed survey activities", <a href="https://www.admie.gr/en/kentro-typoy/press-releases/great-sea-interconnector-seabed-survey-activities-0">https://www.admie.gr/en/kentro-typoy/press-releases/great-sea-interconnector-seabed-survey-activities-0</a>, 10 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s31">Cyprus Mail, "Greece–Cyprus interconnector to be complete by end of 2031, Admie says", <a href="https://cyprus-mail.com/2026/11/14/greece-cyprus-interconnector-to-be-complete-by-end-of-2031-admie-says">https://cyprus-mail.com/2026/11/14/greece-cyprus-interconnector-to-be-complete-by-end-of-2031-admie-says</a>, 14 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s32">European Commission, Global Gateway: GREGY high-voltage electrical interconnection, <a href="https://international-partnerships.ec.europa.eu/policies/global-gateway/gregy-high-voltage-electrical-interconnection-eastern-mediterranean_en">https://international-partnerships.ec.europa.eu/policies/global-gateway/gregy-high-voltage-electrical-interconnection-eastern-mediterranean_en</a>. Accessed 23 Nov 2026.</li>
+          <li id="s33">To Vima, "EU backs Egypt–Greece power link with €9.56 million grant", <a href="https://www.tovima.com/climate/eu-backs-egypt-greece-power-link-with-e9-56-million-grant">https://www.tovima.com/climate/eu-backs-egypt-greece-power-link-with-e9-56-million-grant</a>, 29 Jan 2026. Accessed 23 Nov 2026.</li>
+          <li id="s34">IPTO, "Saudi Greek Interconnection established by IPTO and National Grid", <a href="https://www.admie.gr/en/kentro-typoy/press-releases/saudi-greek-interconnection-established-ipto-and-national-grid">https://www.admie.gr/en/kentro-typoy/press-releases/saudi-greek-interconnection-established-ipto-and-national-grid</a>, 7 Feb 2024. Accessed 23 Nov 2026.</li>
+          <li id="s35">Naftemporiki, "Greece and Saudi Arabia: mega-project is maturing", <a href="https://www.naftemporiki.gr/english/2040635/greece-and-saudi-arabia-mega-project-is-maturing/">https://www.naftemporiki.gr/english/2040635/greece-and-saudi-arabia-mega-project-is-maturing/</a>, 1 Dec 2025. Accessed 23 Nov 2026.</li>
+          <li id="s36">Arab News, "Saudi Arabia, Greece call for safe shipping routes, closer energy ties", <a href="https://www.arabnews.pk/saudi-arabia/saudi-arabia-greece-call-for-safe-shipping-routes-closer-energy-ties-3005238">https://www.arabnews.pk/saudi-arabia/saudi-arabia-greece-call-for-safe-shipping-routes-closer-energy-ties-3005238</a>, Oct 2026. Accessed 23 Nov 2026.</li>
+          <li id="s37">Euronews, "EU-backed electricity link to Cyprus stalls amid regional tensions", <a href="https://www.euronews.com/2026/08/19/eu-backed-electricity-link-to-cyprus-stalls-amid-regional-tensions">https://www.euronews.com/2026/08/19/eu-backed-electricity-link-to-cyprus-stalls-amid-regional-tensions</a>, 19 Aug 2026. Accessed 23 Nov 2026.</li>
+          <li id="s38">Cyprus Mail, "Final cost of GSI remains an unknown", <a href="https://cyprus-mail.com/2026/10/20/final-cost-of-gsi-remains-an-unkown">https://cyprus-mail.com/2026/10/20/final-cost-of-gsi-remains-an-unkown</a>, 20 Oct 2026. Accessed 23 Nov 2026.</li>
+          <li id="s39">Balkan Green Energy News, "Alexandroupolis LNG terminal to remain out of service at least until end-March", <a href="https://balkangreenenergynews.com/alexandroupolis-lng-terminal-to-remain-out-of-service-at-least-until-end-march">https://balkangreenenergynews.com/alexandroupolis-lng-terminal-to-remain-out-of-service-at-least-until-end-march</a>, 3 Mar 2025. Accessed 23 Nov 2026.</li>
+          <li id="s40">LNG Prime, "Greek LNG imports rise in 2025", <a href="https://lngprime.com/europe/greek-lng-imports-rise-in-2025/174689/">https://lngprime.com/europe/greek-lng-imports-rise-in-2025/174689/</a>, 19 Jan 2026. Accessed 23 Nov 2026.</li>
+          <li id="s41">LNG Prime, "DESFA allocates Revithoussa LNG slots for 2024 and 2025", <a href="https://lngprime.com/europe/desfa-allocates-revithoussa-lng-slots-for-2024-and-2025/95731">https://lngprime.com/europe/desfa-allocates-revithoussa-lng-slots-for-2024-and-2025/95731</a>, 25 Oct 2023. Accessed 23 Nov 2026.</li>
+          <li id="s42">Riviera, "Greece's Alexandroupolis FSRU expands capacity, takes first LNG cargo since shutdown", <a href="https://www.rivieramm.com/news-content-hub/greeces-alexandroupolis-fsru-expands-capacity-takes-first-lng-cargo-since-shutdown-86568">https://www.rivieramm.com/news-content-hub/greeces-alexandroupolis-fsru-expands-capacity-takes-first-lng-cargo-since-shutdown-86568</a>, 27 Oct 2025. Accessed 23 Nov 2026.</li>
+          <li id="s43">GIIGNL, "Alexandroupolis LNG terminal undergoing three-month maintenance", <a href="https://www.giignl.org/news/alexandroupolis-lng-terminal-undergoing-three-month-maintenance">https://www.giignl.org/news/alexandroupolis-lng-terminal-undergoing-three-month-maintenance</a>, 16 Apr 2026. Accessed 23 Nov 2026.</li>
+          <li id="s44">ICGB, The IGB project, <a href="https://www.icgb.eu/about/igb-project/">https://www.icgb.eu/about/igb-project/</a>. Accessed 23 Nov 2026.</li>
+          <li id="s45">energypress, "Vertical Corridor auctions falter again, hit by high gas prices, uncertainty", <a href="https://energypress.eu/vertical-corridor-auctions-falter-again-hit-by-high-gas-prices-uncertainty/">https://energypress.eu/vertical-corridor-auctions-falter-again-hit-by-high-gas-prices-uncertainty/</a>, 24 Mar 2026. Accessed 23 Nov 2026.</li>
+          <li id="s46">energypress, "Vertical Corridor gains momentum, bookings signal stronger gas demand", <a href="https://energypress.eu/vertical-corridor-gains-momentum-bookings-signal-stronger-gas-demand/">https://energypress.eu/vertical-corridor-gains-momentum-bookings-signal-stronger-gas-demand/</a>, 7 Jul 2026. Accessed 23 Nov 2026.</li>
+          <li id="s47">Balkan Green Energy News, "North Macedonia, Serbia join Vertical Gas Corridor initiative", <a href="https://balkangreenenergynews.com/north-macedonia-serbia-join-vertical-gas-corridor-initiative/">https://balkangreenenergynews.com/north-macedonia-serbia-join-vertical-gas-corridor-initiative/</a>, 4 Sep 2026. Accessed 23 Nov 2026.</li>
+          <li id="s48">To Vima, "US LNG dominates Greek gas imports as exports triple" (DESFA data), <a href="https://www.tovima.com/finance/us-lng-dominates-greek-gas-imports-as-exports-triple/">https://www.tovima.com/finance/us-lng-dominates-greek-gas-imports-as-exports-triple/</a>, 8 Jul 2026. Accessed 23 Nov 2026.</li>
+          <li id="s49">energypress, "First Greek–Ukrainian gas deals signed as part of US plan", <a href="https://energypress.eu/first-greek-ukrainian-gas-deals-signed-as-part-of-us-plan/">https://energypress.eu/first-greek-ukrainian-gas-deals-signed-as-part-of-us-plan/</a>, 17 Nov 2025. Accessed 23 Nov 2026.</li>
+          <li id="s50">energypress, "Atlantic-See LNG Trade doubles LNG supply agreement with Venture Global", <a href="https://energypress.eu/atlantic-see-lng-trade-doubles-lng-supply-agreement-with-venture-global/">https://energypress.eu/atlantic-see-lng-trade-doubles-lng-supply-agreement-with-venture-global/</a>, 12 Jun 2026. Accessed 23 Nov 2026.</li>
+          <li id="s51">EUR-Lex, Regulation (EU) 2026/261 on phasing out Russian natural gas imports, <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R0261">https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R0261</a>, 26 Jan 2026. Accessed 23 Nov 2026.</li>
+          <li id="s52">PV Tech, "Masdar to acquire 67% stake in Greek renewables company Terna Energy", <a href="https://www.pv-tech.org/masdar-to-acquire-67-stake-in-greek-renewables-company-terna-energy/">https://www.pv-tech.org/masdar-to-acquire-67-stake-in-greek-renewables-company-terna-energy/</a>, Jun 2024. Accessed 23 Nov 2026.</li>
+          <li id="s53">Masdar, "Masdar cements major European expansion with completion of 100% acquisition of Terna Energy", <a href="https://masdar.ae/en/news/newsroom/masdar-cements-major-european-expansion">https://masdar.ae/en/news/newsroom/masdar-cements-major-european-expansion</a>, Apr 2025. Accessed 23 Nov 2026.</li>
+          <li id="s54">Balkan Green Energy News, "Greece's PPC Group raises EUR 4.5 billion in capital offering", <a href="https://balkangreenenergynews.com/greeces-ppc-group-raises-eur-4-5-billion-in-capital-offering/">https://balkangreenenergynews.com/greeces-ppc-group-raises-eur-4-5-billion-in-capital-offering/</a>, 22 May 2026. Accessed 23 Nov 2026.</li>
+          <li id="s55">Masdar, "Masdar drives new era of growth for Terna Energy", <a href="https://masdar.ae/en/news/newsroom/masdar-drives-new-era-of-growth-for-terna-energy">https://masdar.ae/en/news/newsroom/masdar-drives-new-era-of-growth-for-terna-energy</a>, 2025. Accessed 23 Nov 2026.</li>
+          <li id="s56">European Investment Bank, Amfilochia pumped storage (project 20220342), <a href="https://www.eib.org/en/projects/pipelines/all/20220342">https://www.eib.org/en/projects/pipelines/all/20220342</a>, 14 Feb 2024. Accessed 23 Nov 2026.</li>
+          <li id="s57">Terna Energy, Amfilochia pumped storage (project page), <a href="https://www.terna-energy.com/en/activities/storage/amfilochia/">https://www.terna-energy.com/en/activities/storage/amfilochia/</a>. Accessed 23 Nov 2026.</li>
+          <li id="s58">Balkan Green Energy News, "Masdar buys giant solar farm in Greece, signs data center development MoU", <a href="https://balkangreenenergynews.com/masdar-buys-giant-solar-farm-in-greece-signs-data-center-development-mou/">https://balkangreenenergynews.com/masdar-buys-giant-solar-farm-in-greece-signs-data-center-development-mou/</a>, Oct 2026. Accessed 23 Nov 2026.</li>
+          <li id="s59">Balkan Green Energy News, "PPC raises EUR 1.35 billion, plans RES expansion in Balkans", <a href="https://balkangreenenergynews.com/ppc-raises-eur-1-35-billion-plans-res-expansion-in-balkans-and-waste-to-energy-projects/">https://balkangreenenergynews.com/ppc-raises-eur-1-35-billion-plans-res-expansion-in-balkans-and-waste-to-energy-projects/</a>, Nov 2021. Accessed 23 Nov 2026.</li>
+          <li id="s60">EBRD, "EBRD invests in PPC's capital increase in Greece", <a href="https://www.ebrd.com/news/2021/ebrd-invests-in-ppcs-capital-increase-in-greece.html">https://www.ebrd.com/news/2021/ebrd-invests-in-ppcs-capital-increase-in-greece.html</a>, 2021. Accessed 23 Nov 2026.</li>
+          <li id="s61">Qatar Investment Authority, "QIA anchors Public Power Corporation's share capital increase", <a href="https://www.qia.qa/en/Newsroom/Pages/QIA-Anchors-Public-Power-Corporations-Share-Capital-Increase.aspx">https://www.qia.qa/en/Newsroom/Pages/QIA-Anchors-Public-Power-Corporations-Share-Capital-Increase.aspx</a>, 25 May 2026. Accessed 23 Nov 2026.</li>
+          <li id="s62">euro2day, "PPC: 33.4% stake of the Greek state after the share capital increase", <a href="https://www.euro2day.gr/en/article/2353526/ppc-334-stake-of-the-greek-state-after-the-amk">https://www.euro2day.gr/en/article/2353526/ppc-334-stake-of-the-greek-state-after-the-amk</a>, May 2026. Accessed 23 Nov 2026.</li>
+          <li id="s63">PPC, Financial results for 2025 (press release filed with Euronext Athens), <a href="https://athens.euronext.com/sites/default/files/hermes_3/2026-03/en/4ab2c8e2-a631-40cb-b2c8-e2a63100cbbb/881_1452_2026_English_2.pdf">https://athens.euronext.com/sites/default/files/hermes_3/2026-03/en/4ab2c8e2-a631-40cb-b2c8-e2a63100cbbb/881_1452_2026_English_2.pdf</a>, 19 Mar 2026. Accessed 23 Nov 2026.</li>
+          <li id="s64">Romania Insider, "PPC completes Enel Romania takeover", <a href="https://www.romania-insider.com/ppc-completes-enel-romania-takeover-october-2023">https://www.romania-insider.com/ppc-completes-enel-romania-takeover-october-2023</a>, Oct 2023. Accessed 23 Nov 2026.</li>
+          <li id="s65">Balkan Green Energy News, "PPC to invest EUR 24 billion with focus on Balkan expansion", <a href="https://balkangreenenergynews.com/ppc-to-invest-eur-24-billion-with-focus-on-balkan-expansion/">https://balkangreenenergynews.com/ppc-to-invest-eur-24-billion-with-focus-on-balkan-expansion/</a>, 27 Apr 2026. Accessed 23 Nov 2026.</li>
+          <li id="s66">Balkan Green Energy News, "Greece's IPTO set to connect over 10 GW of renewables by 2035", <a href="https://balkangreenenergynews.com/greeces-ipto-set-to-connect-over-10-gw-of-renewables-by-2035/">https://balkangreenenergynews.com/greeces-ipto-set-to-connect-over-10-gw-of-renewables-by-2035/</a>, 14 Sep 2026. Accessed 23 Nov 2026.</li>
+          <li id="s67">Ember, European wholesale electricity price data (monthly day-ahead averages, EUR/MWh), <a href="https://ember-energy.org/data/european-wholesale-electricity-price-data/">https://ember-energy.org/data/european-wholesale-electricity-price-data/</a>, downloaded 23 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s68">Eurostat, Electricity prices for household consumers (nrg_pc_204), band 2,500–4,999 kWh, all taxes, <a href="https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_204/default/table">https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_204/default/table</a>, updated 19 Oct 2026. Accessed 23 Nov 2026.</li>
+          <li id="s69">dnews, "Greek power prices surge 68% as heat and gas costs squeeze energy market", <a href="https://www.dnews.gr/eidhseis/news-in-english/605741/greek-power-prices-surge-68-as-heat-and-gas-costs-squeeze-energy-market">https://www.dnews.gr/eidhseis/news-in-english/605741/greek-power-prices-surge-68-as-heat-and-gas-costs-squeeze-energy-market</a>, 2026. Accessed 23 Nov 2026.</li>
+          <li id="s70">Greek City Times, "Greek wholesale electricity price hits a level unseen since 2023", <a href="https://greekcitytimes.com/2026/10/20/wholesale-electricity-price/">https://greekcitytimes.com/2026/10/20/wholesale-electricity-price/</a>, 20 Oct 2026. Accessed 23 Nov 2026.</li>
+          <li id="s71">European Commission, Economic forecast for Greece (Autumn 2026), <a href="https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/greece/economic-forecast-greece_en">https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/greece/economic-forecast-greece_en</a>, Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s72">Eurostat, Electricity prices for non-household consumers (nrg_pc_205), band 2,000–19,999 MWh, excluding VAT, <a href="https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_205/default/table">https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_205/default/table</a>, updated 19 Oct 2026. Accessed 23 Nov 2026.</li>
+          <li id="s73">European Commission, Greece: final updated National Energy and Climate Plan 2021–2030, <a href="https://commission.europa.eu/publications/greece-final-updated-necp-2021-2030-submitted-2025_en">https://commission.europa.eu/publications/greece-final-updated-necp-2021-2030-submitted-2025_en</a>, published 7 Jan 2025. Accessed 23 Nov 2026.</li>
+          <li id="s74">Balkan Green Energy News, "Greece adjusts goals for renewables, pumped hydropower, hydrogen in final NECP", <a href="https://balkangreenenergynews.com/greece-adjusts-goals-for-renewables-pumped-hydropower-hydrogen-in-final-necp/">https://balkangreenenergynews.com/greece-adjusts-goals-for-renewables-pumped-hydropower-hydrogen-in-final-necp/</a>, 21 Oct 2024. Accessed 23 Nov 2026.</li>
+          <li id="s75">Greek News Agenda, "Greece's revised National Energy and Climate Plan", <a href="https://www.greeknewsagenda.gr/greece-revised-national-energy-and-climate-plan/">https://www.greeknewsagenda.gr/greece-revised-national-energy-and-climate-plan/</a>, 24 Oct 2024. Accessed 23 Nov 2026.</li>
+          <li id="s76">energypress, "WindEurope: Greece to fall short of 2030 wind energy target", <a href="https://energypress.eu/windeurope-greece-to-fall-short-of-2030-wind-energy-target/">https://energypress.eu/windeurope-greece-to-fall-short-of-2030-wind-energy-target/</a>, 1 Sep 2026. Accessed 23 Nov 2026.</li>
+          <li id="s77">energypress, "Offshore wind activity resumes, first sea surveys prepared", <a href="https://energypress.eu/offshore-wind-activity-resumes-first-sea-surveys-prepared/">https://energypress.eu/offshore-wind-activity-resumes-first-sea-surveys-prepared/</a>, 23 Apr 2026. Accessed 23 Nov 2026.</li>
+          <li id="s78">energypress, "Merchant battery investors face uncertainty as connection rules change", <a href="https://energypress.eu/merchant-battery-investors-face-uncertainty-as-connection-rules-change/">https://energypress.eu/merchant-battery-investors-face-uncertainty-as-connection-rules-change/</a>, 16 Nov 2026. Accessed 23 Nov 2026.</li>
+          <li id="s79">energypress, "Grid capacity of 2.35 GW reserved for first offshore wind projects", <a href="https://energypress.eu/grid-capacity-2-35-gw-reserved-for-first-offshore-wind-projects/">https://energypress.eu/grid-capacity-2-35-gw-reserved-for-first-offshore-wind-projects/</a>, 7 Jul 2026. Accessed 23 Nov 2026.</li>
+          <li id="s80">energypress, "Court ruling puts pilot offshore wind projects in jeopardy", <a href="https://energypress.eu/court-ruling-puts-pilot-offshore-wind-projects-in-jeopardy/">https://energypress.eu/court-ruling-puts-pilot-offshore-wind-projects-in-jeopardy/</a>, 21 Jul 2026. Accessed 23 Nov 2026.</li>
+        </ol>
+      </section>
+
+      <section>
+        <div class="eyebrow">Keep reading</div>
+        <div class="related">
+          <a href="infrastructure.html"><span class="tag">Infrastructure</span>Infrastructure and big projects</a>
+          <a href="investment.html"><span class="tag">Investment</span>Foreign direct investment</a>
+          <a href="stock-market.html"><span class="tag">Markets</span>The Athens stock market and developed-market status</a>
+        </div>
+        <div class="tags"><a href="../hub.html?tag=energy">energy</a><a href="../hub.html?tag=lignite">lignite</a><a href="../hub.html?tag=renewables">renewables</a><a href="../hub.html?tag=solar">solar</a><a href="../hub.html?tag=electricity%20grid">electricity grid</a><a href="../hub.html?tag=interconnectors">interconnectors</a><a href="../hub.html?tag=lng">lng</a><a href="../hub.html?tag=electricity%20prices">electricity prices</a></div>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer><div class="wrap">Greece 2040 · An independent, non-profit platform about Greece's future. <a href="../hub.html">All topics</a></div></footer>
+
+<script src="charts.js"></script>
+<script>
+  const D = {"mix":{"Coal":[[2010,54.4],[2011,53.2],[2012,51.9],[2013,46.8],[2014,51.9],[2015,43.3],[2016,35.1],[2017,34.2],[2018,32.7],[2019,25.3],[2020,13.9],[2021,9.8],[2022,11.1],[2023,9.4],[2024,5.7],[2025,4.7]],"Gas":[[2010,17.4],[2011,24.1],[2012,22.5],[2013,19.3],[2014,13.7],[2015,17.8],[2016,27.8],[2017,31.3],[2018,26.8],[2019,30.2],[2020,40.5],[2021,41.5],[2022,37.0],[2023,32.7],[2024,37.7],[2025,40.3]],"Wind and solar":[[2010,5.1],[2011,6.7],[2012,9.2],[2013,13.8],[2014,15.1],[2015,16.7],[2016,16.9],[2017,17.4],[2018,19.2],[2019,24.4],[2020,29.0],[2021,29.0],[2022,34.9],[2023,40.7],[2024,41.7],[2025,40.6]],"Hydro":[[2010,13.2],[2011,6.9],[2012,7.3],[2013,11.3],[2014,9.0],[2015,11.9],[2016,10.3],[2017,7.2],[2018,10.9],[2019,8.3],[2020,7.0],[2021,10.9],[2022,7.5],[2023,7.8],[2024,6.3],[2025,5.9]]},"cap":{"Solar":[[2010,0.2],[2011,0.61],[2012,1.54],[2013,2.58],[2014,2.6],[2015,2.6],[2016,2.6],[2017,2.55],[2018,2.59],[2019,2.75],[2020,3.17],[2021,4.07],[2022,5.1],[2023,6.69],[2024,8.83],[2025,11.08]],"Wind":[[2010,1.3],[2011,1.64],[2012,1.75],[2013,1.81],[2014,1.98],[2015,2.09],[2016,2.37],[2017,2.62],[2018,2.88],[2019,3.59],[2020,4.12],[2021,4.65],[2022,4.7],[2023,5.23],[2024,5.37],[2025,5.71]]},"ws":{"Greece":[[2010,5.1],[2011,6.7],[2012,9.2],[2013,13.8],[2014,15.1],[2015,16.7],[2016,16.9],[2017,17.4],[2018,19.2],[2019,24.4],[2020,29.0],[2021,29.0],[2022,34.9],[2023,40.7],[2024,41.7],[2025,40.6]],"EU":[[2010,5.5],[2011,7.3],[2012,8.9],[2013,10.2],[2014,11.2],[2015,12.7],[2016,12.7],[2017,14.3],[2018,15.0],[2019,17.1],[2020,19.7],[2021,19.1],[2022,22.7],[2023,27.0],[2024,28.7],[2025,30.2]]},"trade":[[2010,5.71],[2011,3.23],[2012,1.78],[2013,1.89],[2014,8.82],[2015,9.61],[2016,8.8],[2017,6.24],[2018,6.28],[2019,9.94],[2020,8.86],[2021,3.68],[2022,3.45],[2023,4.91],[2024,-0.31],[2025,-3.01]],"wholesale":{"Greece":[[2015,51.9],[2016,42.8],[2017,54.7],[2018,60.3],[2019,63.8],[2020,45.1],[2021,116.0],[2022,279.4],[2023,119.2],[2024,100.7],[2025,103.9]],"EU_mean":[[2015,38.0],[2016,34.3],[2017,41.2],[2018,50.4],[2019,45.1],[2020,34.0],[2021,99.9],[2022,228.6],[2023,96.1],[2024,80.1],[2025,86.7]]}};
+  const pct = (v) => v.toFixed(1) + '%';
+  G40.bar('chart-lignite', {
+    data: D.mix.Coal.map(([y, v]) => [String(y), v]), max: 60, ticks: [0, 20, 40, 60], fmt: (v) => v + '%',
+    highlightLast: true, lastLabel: '4.7%'
+  });
+  G40.line('chart-mix', {
+    x0: 2010, x1: 2025, y0: 0, y1: 60, yTicks: [0, 20, 40, 60], xTicks: [2010, 2015, 2020, 2025], unit: '%',
+    series: [
+      { name: 'Wind and solar', color: 'var(--accent)', data: D.mix['Wind and solar'] },
+      { name: 'Lignite', color: 'var(--series-3)', data: D.mix.Coal },
+      { name: 'Gas', color: 'var(--series-2)', data: D.mix.Gas },
+      { name: 'Hydro', color: 'var(--series-2)', dash: true, data: D.mix.Hydro }
+    ],
+    tip: (p) => p[2] + ', ' + p[0] + ': ' + pct(p[1])
+  });
+  G40.line('chart-capacity', {
+    x0: 2010, x1: 2025, y0: 0, y1: 12, yTicks: [0, 4, 8, 12], xTicks: [2010, 2015, 2020, 2025], unit: ' GW',
+    series: [
+      { name: 'Solar', color: 'var(--accent)', area: true, data: D.cap.Solar },
+      { name: 'Wind', color: 'var(--series-3)', data: D.cap.Wind }
+    ],
+    tip: (p) => p[2] + ', ' + p[0] + ': ' + p[1].toFixed(1) + ' GW'
+  });
+  G40.line('chart-ws-eu', {
+    x0: 2010, x1: 2025, y0: 0, y1: 45, yTicks: [0, 15, 30, 45], xTicks: [2010, 2015, 2020, 2025], unit: '%',
+    series: [
+      { name: 'Greece', color: 'var(--accent)', area: true, data: D.ws.Greece },
+      { name: 'EU', color: 'var(--series-2)', data: D.ws.EU }
+    ],
+    tip: (p) => p[2] + ', ' + p[0] + ': ' + pct(p[1])
+  });
+  G40.bar('chart-trade', {
+    data: D.trade.map(([y, v]) => [String(y), v]), min: -4, max: 12, ticks: [-4, 0, 4, 8, 12],
+    fmt: (v) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(Number.isInteger(v) ? 0 : 1) + (Number.isInteger(v) ? '' : ' TWh'),
+    highlightLast: true
+  });
+  G40.line('chart-wholesale', {
+    x0: 2015, x1: 2025, y0: 0, y1: 300, yTicks: [0, 100, 200, 300], xTicks: [2015, 2017, 2019, 2021, 2023, 2025], unit: '', k: false,
+    tickFmt: (v) => '€' + v,
+    series: [
+      { name: 'Greece', color: 'var(--accent)', data: D.wholesale.Greece },
+      { name: 'EU average', color: 'var(--series-2)', data: D.wholesale.EU_mean }
+    ],
+    tip: (p) => p[2] + ', ' + p[0] + ': €' + p[1].toFixed(1) + '/MWh'
+  });
+</script>
+</body>
+</html>
